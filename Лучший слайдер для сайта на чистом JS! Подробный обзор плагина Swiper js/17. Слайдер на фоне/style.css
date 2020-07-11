@@ -1,0 +1,52 @@
+/* swiper-bullets styling */
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+	background-color: tomato;
+	opacity: 1;
+}
+
+body {
+	padding: 0;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: static;
+	margin-left: 10px;
+}
+
+.swiper-container {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.section {
+	height: 100vh;
+	min-height: 600px;
+	position: relative;
+	width: 100%;
+}
+
+.section-content {
+	position: relative;
+	z-index: 5;
+	color: #000;
+	padding: 20%;
+}
+
+.card:nth-child(2) {
+	background-color: tomato;
+}
+
+.card:nth-child(3) {
+	background-color: navy;
+}

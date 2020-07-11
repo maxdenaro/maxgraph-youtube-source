@@ -1,0 +1,28 @@
+/* swiper-bullets styling */
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+	background-color: tomato;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: static;
+	margin-left: 10px;
+}
+
+.swiper-container {
+	padding-bottom: 50px;
+}
+
+.swiper-container1 {
+	padding-bottom: 50px;
+	overflow: hidden;
+	width: 100%;
+}

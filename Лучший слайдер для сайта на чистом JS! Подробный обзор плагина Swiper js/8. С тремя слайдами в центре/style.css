@@ -1,0 +1,39 @@
+/* swiper-bullets styling */
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+	background-color: tomato;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: static;
+	margin-left: 10px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.swiper-container {
+	padding: 100px 0;
+	overflow: initial;
+}
+
+.swiper-slide {
+	opacity: 0.5;
+	transition: opacity 0.15s;
+}
+
+.swiper-slide-active,
+.swiper-slide-next,
+.swiper-slide-prev {
+	opacity: 1;
+	transition: opacity 0.15s;
+}

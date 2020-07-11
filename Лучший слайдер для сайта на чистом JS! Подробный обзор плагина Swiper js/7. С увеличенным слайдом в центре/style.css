@@ -1,0 +1,33 @@
+/* swiper-bullets styling */
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+	background-color: tomato;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: navy;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	position: static;
+	margin-left: 10px;
+}
+
+.swiper-container {
+	padding: 100px 0;
+}
+
+.swiper-slide {
+	opacity: 0.5;
+	transition: transform 0.5s;
+}
+
+.swiper-slide-active {
+	transform: scale(1.2);
+	opacity: 1;
+	transition: transform 0.5s;
+}
