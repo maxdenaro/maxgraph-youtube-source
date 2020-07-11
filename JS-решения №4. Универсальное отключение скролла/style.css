@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.section {
+	height: 100vh;
+	background-color: #f0f0f0;
+}
+
+.section:nth-child(2) {
+	background-color: #fff;
+}
+
+.section:nth-child(3) {
+	background-color: #000;
+}
+
+.section:nth-child(4) {
+	background-color: #ff0;
+}
+
+.section:nth-child(5) {
+	background-color: blue;
+}
+
+.scroll-off {
+	position: fixed;
+	left: 30px;
+	top: 30px;
+}
+
+.scroll-on {
+	position: fixed;
+	left: 30px;
+	top: 60px;
+	pointer-events: none;
+}
+
+.disable-scroll {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
