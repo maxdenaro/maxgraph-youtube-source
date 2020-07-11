@@ -1,0 +1,71 @@
+@import "_normalize.css";
+@import "_fonts.css";
+@import "_variables.css";
+@import "_vendor.css";
+@import "_global.css";
+@import "_overall.css";
+
+/* components imports */
+
+body {
+	background-color: #010101;
+}
+
+.container {
+	max-width: 1585px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+.header {
+	padding-top: 25px;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+}
+
+.nav__link {
+	font-weight: 300;
+	font-size: 16px;
+	display: inline-block;
+	color: var(--white-color);
+	margin: 0 33px;
+}
+
+.nav__item:nth-child(3) {
+	position: relative;
+	top: 10px;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+}
+
+.social__link {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	margin-left: 13px;
+}
+
+.social__link--youtube {
+	background-image: url("../img/youtube.png");
+}
+
+.social__link--fb {
+	background-image: url("../img/fb.png");
+}
+
+.social__link--insta {
+	background-image: url("../img/insta.png");
+}
