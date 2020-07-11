@@ -1,0 +1,62 @@
+.grid {
+	margin: 0 -15px;
+	flex-wrap: wrap;
+}
+
+.col-4 {
+	flex: 0 1 403px;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.col-6 {
+	flex: 0 1 605px;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.col-12 {
+	flex: 0 1 1210px;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.card {
+	border: 1px solid #000;
+	padding: 30px;
+	text-align: center;
+}
+
+.card img {
+	height: 200px;
+}
+
+@media (max-width: 1366px) {
+	.col-4 {
+		flex: 0 1 330px;
+	}
+
+	.col-6 {
+		flex: 0 1 496px;
+	}
+
+	.col-12 {
+		flex: 0 1 992px;
+	}
+}
+
+@media (max-width: 992px) {
+
+	.col-4 {
+		flex: 0 1 100%;
+	}
+
+	.col-6 {
+		flex: 0 1 100%;
+	}
+
+	.col-12 {
+		flex: 0 1 100%;
+	}
+
+}

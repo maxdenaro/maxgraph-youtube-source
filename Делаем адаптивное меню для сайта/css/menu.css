@@ -1,0 +1,290 @@
+.header {
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	font-weight: 700;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	margin: 0;
+}
+
+.nav__item:not(:first-child) {
+	margin-left: 20px;
+}
+
+.nav__item {
+	position: relative;
+	padding: 15px 0;
+}
+
+.nav__link--drop::after {
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-image: url("../download.svg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin-left: 5px;
+	transition: transform 0.3s;
+}
+
+.nav__list--dropdown {
+	position: absolute;
+	background-color: #fff;
+	right: 0;
+	top: 100%;
+	padding: 30px;
+	display: block;
+	box-shadow: 0 5px 15px 0 rgba(0,0,0, 0.2);
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.dropdown-submenu {
+	display: flex;
+	align-items: initial;
+}
+
+.dropdown-submenu__item {
+	flex-grow: 1;
+	min-width: 200px;
+	padding: 0 30px;
+}
+
+.dropdown-submenu__list {
+	padding: 0;
+}
+
+.dropdown-submenu__item:not(:last-child) {
+	border-right: 1px solid #bfbfbf;
+}
+
+.dropdown-submenu__item:first-child {
+	padding-left: 0;
+}
+
+.dropdown-submenu__item:last-child {
+	padding-right: 0;
+}
+
+.mobile-back {
+	display: none;
+}
+
+.dropdown-list__item {
+	margin-bottom: 10px;
+}
+
+.dropdown-submenu__list-item {
+	margin-bottom: 10px;
+}
+
+@media (min-width: 769px) {
+	.nav__link--drop:hover::after {
+		transform: rotate(180deg);
+		transition: all 0.3s;
+	}
+
+	.nav__item:hover .nav__list--dropdown {
+		visibility: visible;
+		opacity: 1;
+		transition: all 0.3s;
+	}
+}
+
+.burger {
+	width: 40px;
+	height: 20px;
+	cursor: pointer;
+	background-color: transparent;
+	border: none;
+	position: relative;
+	display: none;
+}
+
+.burger::before,
+.burger::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #000;
+}
+
+.burger::after {
+	top: auto;
+	bottom: 0;
+}
+
+.burger span {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	height: 2px;
+	display: inline-block;
+	background-color: #000;
+}
+
+.overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.5);
+	z-index: 99;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.lock {
+	overflow: hidden;
+}
+
+@media (max-width: 768px) {
+	.burger {
+		display: block;
+	}
+
+	.mobile-back {
+		display: block;
+	}
+
+	.header {
+		padding: 15px 0;
+	}
+
+	.nav {
+		position: fixed;
+		left: 0;
+		top: 0;
+		max-width: 400px;
+		width: 80%;
+		height: 100vh;
+		z-index: 100;
+		box-shadow: 5px 0 15px -5px rgba(0,0,0, 0.8);
+		background-color: #fff;
+		transform: translateX(-150vw);
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+
+	.nav__list {
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0;
+		padding-top: 10%;
+		position: relative;
+	}
+
+	.nav__item {
+		margin-left: 0 !important;
+		font-size: 20px;
+		width: 100%;
+		padding: 0;
+		position: static;
+	}
+
+	.nav__link,
+	.dropdown-submenu__list-item a,
+	.dropdown-list__link {
+		padding: 20px 30px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #bfbfbf;
+	}
+
+	.nav__link::after {
+		transform: rotate(-90deg);
+	}
+
+	.nav__list--dropdown {
+		position: absolute;
+		top: 0;
+		right: auto;
+		left: 100%;
+		box-shadow: none;
+		width: 100%;
+		display: none;
+	}
+
+	.dropdown-submenu__item {
+		width: 100%;
+		padding: 0;
+		border: none !important;
+	}
+
+	.dropdown-submenu__title {
+		padding: 0 30px;
+	}
+
+	.dropdown-submenu__banner {
+		display: inline-block;
+		padding: 20px;
+	}
+
+	.nav__list.transformation {
+		transform: translateX(-100%);
+		transition: all 0.3s;
+	}
+
+	.nav__list--dropdown.transformation {
+		opacity: 1;
+		visibility: visible;
+		display: block;
+		transform: none;
+		background-color: #fff;
+		transition: all 0.3s;
+	}
+
+	.nav.open {
+		transform: translateX(0);
+		transition: all 0.3s;
+	}
+
+	.overlay.open {
+		opacity: 1;
+		visibility: visible;
+		transition: all 0.3s;
+	}
+
+	.mobile-back a {
+		position: relative;
+		border: none;
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+
+	.mobile-back a::before {
+		content: "";
+		width: 10px;
+		height: 10px;
+		background-image: url("../download.svg");
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: inline-block;
+		margin-right: 10px;
+		transform: rotate(90deg);
+	}
+}

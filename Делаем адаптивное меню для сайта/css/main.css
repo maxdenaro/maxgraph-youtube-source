@@ -1,0 +1,49 @@
+.section {
+	padding: 100px 0;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.flex {
+	display: flex;
+}
+
+.grid {
+	margin: 0 -15px;
+	flex-wrap: wrap;
+}
+
+.col-4 {
+	flex: 0 1 calc(100% / 3);
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.col-6 {
+	flex: 0 1 calc(100% / 2);
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.col-12 {
+	flex: 0 1 100%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+
+.card {
+	border: 1px solid #000;
+	padding: 30px;
+	text-align: center;
+}
+
+.card img {
+	height: 200px;
+}
+
+@media (max-width: 768px) {
+	.col-4,
+	.col-6,
+	.col-12 {
+		flex: 0 1 100%;
+	}
+}
