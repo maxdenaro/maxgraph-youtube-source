@@ -1,2 +1,2 @@
 # maxgraph-youtube-source
-Исходники из уроков youtube-канала "Maxgraph - сайты как страсть"
+Исходники из видео youtube-канала "Maxgraph - сайты как страсть"
