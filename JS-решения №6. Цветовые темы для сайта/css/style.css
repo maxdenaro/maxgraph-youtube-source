@@ -1,0 +1,317 @@
+@font-face {
+  font-family: "Segoe UI";
+  font-weight: 300;
+  font-style: italic;
+
+  font-display: swap;
+  src: url("../fonts/SegoeUI-LightItalic.woff2") format("woff2"),
+  url("../fonts/SegoeUI-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Forum";
+  font-weight: normal;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/Forum.woff2") format("woff2"),
+  url("../fonts/Forum.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-weight: normal;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Book.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-weight: 500;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Medium.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Futura PT";
+  font-weight: 300;
+  font-style: normal;
+
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Light.woff2") format("woff2"),
+  url("../fonts/FuturaPT-Light.woff") format("woff");
+}
+
+.light-theme {
+	--main-color: #e5e5e5;
+	--second-color: #272727;
+}
+
+.dark-theme {
+	--main-color: #272727;
+	--second-color: #e5e5e5;
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+
+  font-family: "Futura PT", sans-serif;
+  font-size: 18px;
+  color: #272727;
+
+  background-color: var(--main-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  overflow: hidden;
+
+  border: 0 !important;
+
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.container-fluid {
+  width: 79%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* Header */
+.header {
+  position: relative;
+  z-index: 10;
+
+  margin-bottom: -113px;
+  padding-top: 60px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: auto;
+	
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header-logo-color {
+	fill: var(--second-color);
+}
+
+.header-nav {
+  display: flex;
+
+  color: #fff;
+}
+
+.header-nav-list {
+  display: flex;
+  margin: 0;
+  margin-right: 90px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.header-nav-item:not(:last-child) {
+  margin-right: 39px;
+}
+
+.header-nav-link {
+  display: inline-block;
+  width: 22px;
+  height: 20px;
+
+  font-weight: 300;
+  vertical-align: middle;
+
+  transition: opacity 0.2s ease;
+}
+
+.header-nav-link:hover {
+  opacity: 0.5;
+}
+
+.personal-area {
+  width: 15px;
+  height: 23px;
+}
+
+.header-nav-list svg {
+	fill: var(--second-color);
+	stroke: var(--main-color);
+}
+
+.basket {
+  background-position: left center;
+  background-size: contain;
+}
+
+.menu-btn {
+  width: 30px;
+  height: 20px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity 0.2s ease;
+}
+
+.menu-btn:hover {
+  opacity: 0.5;
+}
+
+.menu-btn-line {
+  position: relative;
+
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+
+  vertical-align: middle;
+
+  background-color: var(--main-color);
+}
+
+.menu-btn-line::before,
+.menu-btn-line::after {
+  content: "";
+  position: absolute;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background-color: inherit;
+}
+
+.menu-btn-line::before {
+  top: -8px;
+}
+
+.menu-btn-line::after {
+  bottom: -8px;
+}
+
+.category {
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-weight: 300;
+}
+
+/* First section */
+.first-section {
+  height: 100vh;
+  background: linear-gradient(90deg, var(--main-color) 0%, var(--main-color) 61%, var(--second-color) 61%, var(--second-color) 100%);
+}
+
+.first-container {
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  padding-bottom: 60px;
+}
+
+.first-text-block {
+  padding-top: 140px;
+}
+
+.first-section-title {
+  margin-bottom: 50px;
+
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.first-section-link {
+  position: relative;
+  z-index: 10;
+
+  display: inline-block;
+  padding-left: 297px;
+  padding-left: calc(41vw / 2);
+
+  font-family: "Segoe UI";
+
+  transition: opacity 0.2s ease;
+}
+
+.first-section-link:hover {
+  opacity: 0.5;
+}
+
+.first-text-block {
+	color: var(--second-color);
+}
+
+.section-title {
+	margin: 0;
+	margin-bottom: 40px;
+	font-family: "Forum", serif;
+	font-size: calc(13vw / 2.9);
+	line-height: 71px;
+	font-weight: 400;
+	color: inherit;
+}
+
+.first-section-link {
+	color: inherit;
+}
+
+.first-section-link::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 193px;
+  left: calc(27vw / 2);
+
+  display: inline-block;
+  width: 130px;
+  height: 1px;
+
+  background-color: currentColor;
+  transform: translate(-50%);
+}
+
