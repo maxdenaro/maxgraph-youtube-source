@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.form {
+	border: 1px solid #000;
+	border-radius: 10px;
+	margin: 50px auto;
+	width: 400px;
+	padding: 30px;
+}
+
+.form-label {
+	display: flex;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.js-validate-error-label {
+	position: absolute;
+	right: 5px;
+	top: 100%;
+}
+
+.form-label span {
+	flex-grow: 1;
+	display: inline-block;
+}
+
+.form-label input:not([type="file"]) {
+	border: none;
+	border-bottom: 1px solid #000;
+	border-radius: 0;
+}
+
+.form-label input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+.file-label span {
+	border: 1px solid #000;
+	display: inline-block;
+	padding: 5px 10px;
+	flex-grow: 0;
+	cursor: pointer;
+}
+
+.form button {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	padding: 5px 15px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.form h2 {
+	text-align: center;
+	margin-top: 0;
+}
