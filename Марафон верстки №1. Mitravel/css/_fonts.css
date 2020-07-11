@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Helvetica';
+	src: url('../fonts/HelveticaNeue-Bold.woff2') format('woff2'),
+		url('../fonts/HelveticaNeue-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair';
+	src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+		url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFCompact';
+	src: url('../fonts/SFCompactText-Light.woff2') format('woff2'),
+		url('../fonts/SFCompactText-Light.woff') format('woff');
+	font-display: swap;
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFCompact';
+	src: url('../fonts/SFCompactText-Regular.woff2') format('woff2'),
+		url('../fonts/SFCompactText-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProDisplay';
+	src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+		url('../fonts/SFProDisplay-Bold.woff') format('woff');
+	font-display: swap;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProDisplay';
+	src: url('../fonts/SFProDisplay-Heavy.woff2') format('woff2'),
+		url('../fonts/SFProDisplay-Heavy.woff') format('woff');
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProDisplay';
+	src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2'),
+		url('../fonts/SFProDisplay-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SFProText-Regular';
+	src: url('../fonts/SFProText-Regular.woff2') format('woff2'),
+		url('../fonts/SFProText-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}

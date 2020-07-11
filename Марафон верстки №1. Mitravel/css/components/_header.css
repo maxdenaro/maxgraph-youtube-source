@@ -1,0 +1,159 @@
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 100;
+	/* background-color: rgba(0, 0, 0, 0.7); */
+}
+
+.header__container {
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 55px;
+	padding-bottom: 55px;
+}
+
+.social {
+	display: flex;
+	align-items: center;
+}
+
+.social__item:not(:last-child) {
+	margin-right: 40px;
+}
+
+.social__link {
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: opacity 0.3s;
+}
+
+.social__link:hover {
+	opacity: 0.8;
+	transition: opacity 0.3s;
+}
+
+.social__link--fb {
+	background-image: url("/img/fb.svg");
+	width: 11px;
+	height: 20px;
+}
+
+.social__link--tw {
+	background-image: url("/img/tw.svg");
+	width: 20px;
+	height: 17px;
+}
+
+.logo {
+	font-weight: 800;
+	font-size: 22px;
+	line-height: 1;
+	text-align: center;
+	letter-spacing: 2px;
+	color: var(--white-color);
+	text-transform: uppercase;
+}
+
+.burger {
+	width: 48px;
+	height: 10px;
+	position: relative;
+}
+
+.burger:hover .burger__line {
+	background-color: var(--accent-color);
+	transition: background-color 0.3s;
+}
+
+.burger__line {
+	width: 100%;
+	height: 2px;
+	background-color: var(--white-color);
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	transition: background-color 0.3s;
+}
+
+.burger__line:last-child {
+	top: auto;
+	bottom: 0;
+}
+
+.menu {
+	position: fixed;
+	left: -150vw;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+	background-color: var(--neptune-color);
+	transition: left 0.3s;
+}
+
+.menu--visible {
+	left: 0;
+	transition: left 0.3s;
+}
+
+.menu__nav {
+	width: 100%;
+	height: 100%;
+	padding: 30px 0;
+	overflow-y: auto;
+}
+
+.menu__list {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.menu__link {
+	color: var(--white-color);
+	margin-bottom: 20px;
+	display: inline-block;
+	transition: color 0.3s;
+}
+
+.menu__link:hover {
+	color: var(--black-color);
+	transition: color 0.3s;
+}
+
+.menu__close {
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 10%;
+	top: 10%;
+}
+
+.menu__close-line {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	background-color: var(--white-color);
+}
+
+.menu__close-line:first-child {
+	transform: rotate(45deg);
+}
+
+.menu__close-line:last-child {
+	transform: rotate(-45deg);
+}
+
+
