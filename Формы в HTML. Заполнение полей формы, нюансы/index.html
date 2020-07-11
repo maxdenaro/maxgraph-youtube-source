@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		.visually-hidden {
+			position: absolute !important;
+			clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+			clip: rect(1px, 1px, 1px, 1px);
+			padding:0 !important;
+			border:0 !important;
+			height: 1px !important;
+			width: 1px !important;
+			overflow: hidden;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+
+
+
+		<input type="radio" name="gender" value="м" id="gender-1">
+
+
+		<label>
+			<span class="visually-hidden">Имя</span>
+			<input type="text" placeholder="Введите имя">
+		</label>
+
+		<input type="radio" name="gender" value="ж">
+
+
+
+		<label for="gender-1">Пол-1</label>
+
+		<fieldset>
+			<legend>Группа выбор еды</legend>
+			<label>
+				<input type="checkbox" name="Еда[]">Гречка
+			</label>
+			<label>
+				<input type="checkbox" name="Еда[]">Картошка
+			</label>
+		</fieldset>
+
+
+
+		<button type="submit">Отправить</button>
+	</form>
+</body>
+</html>
