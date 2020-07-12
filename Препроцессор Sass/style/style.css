@@ -1,0 +1,38 @@
+h1 {
+  font-size: 5.05208vw;
+  font-size: 9.25926vh;
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  background-color: gray;
+  padding: 30px;
+}
+
+.card__title {
+  color: red;
+}
+
+.card__title--green {
+  color: green;
+}
+
+.card__title .blue {
+  color: blue;
+}
+
+.card__title::before {
+  content: '5';
+}
+
+.card__title:hover::before {
+  margin-right: 30px;
+}
+/*# sourceMappingURL=style.css.map */

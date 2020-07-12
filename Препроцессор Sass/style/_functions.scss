@@ -1,0 +1,23 @@
+@function vw($value, $base: 1920) {
+	@return $value / $base * 100vw;
+}
+
+@function vh($value, $base: 1080) {
+	@return $value / $base * 100vh;
+}
+
+@mixin mobile {
+	@media(max-width: 576px) {
+		@content;
+	}
+}
+
+h1 {
+	font-size: vw(97);
+	font-size: vh(100);
+
+	@include mobile {
+		font-size: 30px;
+	}
+}
+

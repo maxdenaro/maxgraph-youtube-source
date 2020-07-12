@@ -1,0 +1,28 @@
+.card {
+	height: 400px;
+	width: 300px;
+	background-color: gray;
+	padding: 30px;
+
+	&__title {
+		color: red;
+
+		&--green {
+			color: green;
+		}
+
+		.blue {
+			color: blue;
+		}
+		
+		&::before {
+			content: '5';
+		}
+
+		&:hover {
+			&::before {
+				margin-right: 30px;
+			}
+		}
+	}
+}
