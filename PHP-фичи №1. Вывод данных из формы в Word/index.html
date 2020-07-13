@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>phpword</title>
+	<style>
+		input {
+			width: 300px;
+			height: 50px;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		button {
+			width: 300px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<form action="word.php" method="POST" enctype="multipart/form-data">
+		<input type="date" name="birth">
+		<input type="text" name="name" placeholder="Введите ФИО">
+		<input type="tel" name="tel" placeholder="Введите телефон" required>
+		<input type="text" name="city" placeholder="Введите город">
+		<input type="text" name="purpose" placeholder="Введите цель">
+		<input type="number" name="startYear" placeholder="Введите начальный год обучения">
+		<input type="number" name="lastYear" placeholder="Введите конечный год обучения">
+		<input type="text" name="university" placeholder="Введите университет">
+		<input type="file" name="file">
+		<textarea name="about" id="" cols="30" rows="10" placeholder="О себе"></textarea>
+		<button type="submit">Отправить</button>
+	</form>
+</body>
+</html>
