@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="content">
+		<button class="open-btn">Открыть форму</button>
+	</div>
+	<div class="modals">
+		<div class="modal">
+			<button class="modal__btn"></button>
+			<button class="mobile-close" data-swipe-threshold="20" data-swipe-timeout="500" data-swipe-ignore="false"></button>
+			<form class="modal__form form">
+				<input type="text" class="form__input" placeholder="Введите имя">
+				<input type="tel" class="form__input" placeholder="Введите телефон">
+				<button class="form__btn">Отправить</button>
+			</form>
+		</div>
+	</div>
+	<script src="swiped-events.min.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>

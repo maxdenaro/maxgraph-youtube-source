@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'PT Sans', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+button {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+	color: #fff;
+	background-color: crimson;
+}
+
+.content {
+	padding: 100px;
+}
+
+.open-btn {
+	padding: 15px;
+	font-weight: 700;
+}
+
+.modals {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0, 0.6);
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	background-color: #fff;
+	padding: 30px;
+}
+
+.modal__btn {
+	position: absolute;
+	right: 30px;
+	top: 30px;
+	width: 15px;
+	height: 15px;
+	background-image: url("close.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: transparent;
+}
+
+.form {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form__input {
+	height: 40px;
+	padding-left: 10px;
+	margin-bottom: 30px;
+}
+
+.form__btn {
+	height: 40px;
+}
+
+.mobile-close {
+	display: none;
+}
+
+.is-open {
+	display: block;
+}
+
+@media (max-width: 576px) {
+	.modal {
+		padding: 50px 30px;
+		top: auto;
+		bottom: 0;
+		left: 0;
+		transform: none;
+		transform: translateY(150vh);
+		width: 100%;
+		height: 75vh;
+		border-top-right-radius: 25px;
+		border-top-left-radius: 25px;
+		transition: transform 0.3s;
+	}
+
+	.visible {
+		transform: translateY(0);
+		transition: transform 0.3s;
+	}
+
+	.modal__btn {
+		display: none;
+	}
+
+	.form {
+		margin: 30px 0;
+	}
+
+	.mobile-close {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 50px;
+		display: block;
+		background-color: transparent;
+	}
+
+	.mobile-close::before {
+		content: "";
+		position: absolute;
+		left: 50%;
+		top: 30%;
+		transform: translate(-50%, -50%);
+		width: 50px;
+		height: 2px;
+		background-color: #bfbfbf;
+	}
+
+	.is-open {
+		display: block;
+	}
+}
