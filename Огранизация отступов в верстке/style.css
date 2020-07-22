@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	font-family: "Oswald", sans-serif;
+	background-color: #e5e5e5;
+}
+
+img {
+	max-width: 100%;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.content {
+	width: 1200px;
+	padding: 0 10px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+/* блочные */
+.example-1 .block {
+	background-color: crimson;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+/* строчные */
+.example-2 .block {
+	background-color: crimson;
+	padding: 15px;
+	margin: 10px 20px;
+	display: inline-block;
+}
+
+/* центрирование блока - контейнер */
+
+/* флекс-сетка */
+.example-3 .grid {
+	display: flex;
+	margin: 0 -15px;
+}
+
+.example-3 .block {
+	padding: 0 15px;
+	flex: 0 0 33.33%;
+}
+
+.example-3 .cont {
+	background-color: crimson;
+}
+
+.example-33 .block {
+	width: 200px;
+	height: 200px;
+	background-color: crimson;
+	margin: 0 auto;
+}
+
+.example-34 .block {
+	background-color: crimson;
+	background-image: url("left-arrow.svg");
+	background-repeat: no-repeat;
+	background-position: 3px center;
+	/* margin-left: 30px; */
+	padding-left: 30px;
+}
+
+/* Интересное поведение флекс с маргин авто */
+.example-4 {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.example-4 h2 {
+	width: 100%;
+}
+
+.example-4 .margin{
+	margin-left: auto;
+}
+
+.example-5 .mt {
+	margin-top: 50px;
+}
+
+.example-5 .mb {
+	margin-bottom: 20px;
+}
+
+.example-6 ul {
+	background-color: crimson;
+	margin: 0;
+	padding: 20px 20px;
+}
+
+.example-6 li:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+
+.example-7 ul {
+	display: flex;
+	list-style: none;
+}
+
+.example-7 li:not(:last-child) {
+	margin-right: 20px;
+}
+
+
+
+
+/* и далее про last-child */
+.card {
+	width: 300px;
+	background-color: #fff;
+	overflow: hidden;
+	border-radius: 4px;
+}
+
+.card .text {
+	padding: 20px;
+}
+
+.card h3 {
+	margin-top: 0;
+}
+
+.card p {
+	margin-top: 0;
+}
+
+.card span {
+	display: block;
+}
+
+
+.example-9 .card h3 {
+	margin-top: 0;
+}
+
+.example-9 .card span {
+	margin-bottom: 0;
+}
+
+.example-9 .card {
+	min-height: 200px;
+	padding: 20px;
+}
+
+.example-10 .card {
+	margin-bottom: 20px;
+}
+
+.title {
+	margin: 0;
+	background-color: crimson;
+}
+
+.card__title {
+	margin-bottom: 15px;
+}
+
+.card-2__title {
+	margin-bottom: 20px;
+}
+
+.cms-content * {
+	margin: 0;
+}
+
+.cms-content h2 {
+	margin-bottom: 20px;
+}
+
+.cms-content p {
+	margin-bottom: 30px;
+}
+
+.cms-content ul {
+	margin-bottom: 20px;
+}
+
+.example h2 {
+	margin-top: 0;
+}
+
+.example {
+	margin-bottom: 40px;
+}
