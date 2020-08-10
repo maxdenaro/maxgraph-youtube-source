@@ -14,7 +14,7 @@
 			<button type="submit" name="post">Отправить</button>
 		</form>
 	</div>
-	<script src="https://www.google.com/recaptcha/api.js?render=6Lec97wZAAAAAD3qvCpvfQg4UrqwKcZRv1nNrj9a"></script>
+	<script src="https://www.google.com/recaptcha/api.js?render="></script>
 	<script>
 	
 		document.querySelector('form').addEventListener('submit', (e) => {
@@ -23,7 +23,7 @@
 			let tk = '';
 
 			grecaptcha.ready(function() {
-          grecaptcha.execute('6Lec97wZAAAAAD3qvCpvfQg4UrqwKcZRv1nNrj9a', {action: 'homepage'}).then(function(token) {
+          grecaptcha.execute('', {action: 'homepage'}).then(function(token) {
             tk = token;
 						document.getElementById('token').value = token;
 

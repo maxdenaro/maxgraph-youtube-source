@@ -6,7 +6,7 @@ if(isset($_POST['token'])){
 	$captcha=$_POST['token'];
 }
 
-$secretKey = "6Lec97wZAAAAACu1X_ipcAdJHir96UGwlZRssljS";
+$secretKey = "";
 $ip = $_SERVER['REMOTE_ADDR'];
 
 // post request to server
