@@ -1,0 +1,46 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  background-color: var(--quill-gray);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(var(--color-black), 0.05);
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 300px;
+    height: 100%;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 560px;
+    font-weight: 700;
+    font-size: 72px;
+  }
+
+  &__descr {
+    margin: 0;
+    font-size: 18px;
+  }
+
+  &__image {
+    position: absolute;
+    right: 273px;
+    bottom: 0;
+    max-height: 90%;
+  }
+}
