@@ -1,0 +1,35 @@
+.product {
+  position: relative;
+
+  &__image {
+    margin-bottom: 20px;
+
+    img {
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: var(--color-tundora);
+
+    a {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+
+  &__price {
+    font-weight: 700;
+    font-size: 13px;
+  }
+}

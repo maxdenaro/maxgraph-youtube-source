@@ -10,28 +10,6 @@
   }
 
   &__link {
-    position: relative;
-    font-size: 15px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -5px;
-      width: 100%;
-      height: 2px;
-      background-color: var(--color-dark);
-      opacity: 0;
-      transition: opacity 0.15s;
-    }
-
-    &:hover {
-      &::before {
-        opacity: 1;
-        transition: opacity 0.15s;
-      }
-    }
-
     &--current {
       &::before {
         opacity: 1;

@@ -1,0 +1,36 @@
+.main-products {
+  &__container {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 46px;
+  }
+
+  &__item {
+    margin: 0 18px;
+  }
+
+  &__btn {
+    font-size: 24px;
+
+    &--current {
+      &::before {
+        opacity: 1;
+        transition: opacity 0.15s;
+      }
+    }
+  }
+}
+
+.products-grid {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    margin-right: 30px;
+  }
+}
