@@ -1,0 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #131313;
+}
+
+.element {
+	background-color: #f5f5f5;
+	padding: 30px;
+	color: #131313;
+	font-weight: bold;
+	transition: color 3s linear, background-color 3s linear;
+}
+
+.element:hover {
+	background-color: crimson;
+	color: #fff;
+	transition: color 3s linear,
+	background-color 3s linear;
+}
