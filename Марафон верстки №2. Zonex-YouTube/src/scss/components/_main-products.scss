@@ -14,6 +14,31 @@
     margin: 0 18px;
   }
 
+  &__btn-center {
+    text-align: center;
+  }
+
+  &__more {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 95px;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-gray);
+
+    span {
+      display: inline-block;
+      margin-bottom: 12px;
+    }
+
+    svg {
+      width: 12px;
+      height: 21px;
+      fill: var(--color-dark);
+    }
+  }
+
   &__btn {
     font-size: 24px;
 
@@ -32,5 +57,14 @@
 
   &__item {
     margin-right: 30px;
+    margin-bottom: 80px;
+
+    &:nth-child(5n) {
+      margin-right: 0;
+    }
+
+    &:nth-last-child(-n+5) {
+      margin-bottom: 0;
+    }
   }
 }

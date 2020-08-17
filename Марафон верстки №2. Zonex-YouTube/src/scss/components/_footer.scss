@@ -1,0 +1,161 @@
+.footer {
+  &__content {
+    padding: 0 250px;
+    padding-top: 98px;
+    padding-bottom: 0;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 95px;
+  }
+
+  &__column {
+    &:nth-child(2) {
+      margin-left: -60px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+
+  &__list {
+    &--row {
+      display: flex;
+      align-items: center;
+
+      .footer__item {
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-right: 43px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    font-size: 13px;
+    color: var(--color-tundora);
+
+    &--row {
+      font-weight: 700;
+      color: var(--color-dark);
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 37px;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  &__form {
+    margin-bottom: 25px;
+    width: 646px;
+    transform: translateY(3px);
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-tundora);
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #eee;
+    padding: 40px 0;
+  }
+
+  &__social {
+    margin-right: 11px;
+  }
+}
+
+.subscribe-form {
+  position: relative;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 38px;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-tundora);
+  }
+
+  &__btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 13px 10px;
+    font-weight: 500;
+    font-size: 13px;
+    color: var(--color-dark);
+  }
+
+  &__field {
+    display: block;
+    border-bottom: 2px solid var(--color-dark);
+    padding-bottom: 10px;
+    width: 100%;
+
+    input {
+      border: none;
+      padding-right: 80px;
+      width: 100%;
+      font-weight: 500;
+      font-size: 13px;
+      color: var(--color-dark);
+
+      &::placeholder {
+        color: rgba(#454545, 0.5);
+      }
+    }
+  }
+}
+
+.social {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 29px;
+    }
+  }
+
+  &__link {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &--tw {
+      background-image: url("../img/tw.png");
+    }
+
+    &--fb {
+      background-image: url("../img/fb.png");
+    }
+
+    &--in {
+      background-image: url("../img/in.png");
+    }
+
+    &--pin {
+      background-image: url("../img/pin.png");
+    }
+  }
+}

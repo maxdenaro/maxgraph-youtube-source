@@ -1,0 +1,57 @@
+.shop-banners {
+  padding-top: 45px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.shop-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 50%;
+  min-height: 420px;
+  color: var(--color-white);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: var(--color-dark);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(#d70808, 0.1);
+  }
+
+  &__title {
+    position: relative;
+    z-index: 1;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 48px;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 1;
+  }
+
+  &--men {
+    background-image: url("../img/banner-1.jpg");
+  }
+
+  &--women {
+    background-image: url("../img/banner-2.jpg");
+  }
+}
