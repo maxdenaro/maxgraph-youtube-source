@@ -35,18 +35,6 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-
-  &__quantity {
-    display: inline-flex;
-    align-items: center;
-    border-radius: 25px;
-    padding: 0 5px;
-    height: 16px;
-    font-weight: 700;
-    font-size: 10px;
-    color: var(--color-white);
-    background-color: var(--color-dark);
-  }
 }
 
 .search-form {
@@ -59,4 +47,16 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+}
+
+.quantity {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 25px;
+  padding: 0 5px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 10px;
+  color: var(--color-white);
+  background-color: var(--color-dark);
 }

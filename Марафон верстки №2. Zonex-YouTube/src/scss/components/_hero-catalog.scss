@@ -1,0 +1,57 @@
+.hero-catalog {
+  padding-top: 130px;
+
+  &__slider {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f8f8f8;
+  }
+}
+
+.catalog-slide {
+  padding: 108px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    max-width: 375px;
+    font-weight: 700;
+    font-size: 36px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 40px;
+    max-width: 390px;
+    font-size: 15px;
+    line-height: 28px;
+    color: var(--color-tundora);
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 16px 43px;
+    font-size: 13px;
+
+    &--dark {
+      border: 1px solid var(--color-dark);
+      color: var(--color-white);
+      background-color: var(--color-dark);
+    }
+
+    &--light {
+      border: 1px solid var(--color-dark);
+      color: var(--color-dark);
+      background-color: transparent
+    }
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+}

@@ -46,7 +46,7 @@ const imgToApp = () => {
 }
 
 const htmlInclude = () => {
-  return src(['./src/index.html'])
+  return src(['./src/*.html'])
     .pipe(fileinclude({
       prefix: '@',
       basepath: '@file'
@@ -154,7 +154,7 @@ const watchFiles = () => {
   watch('./src/scss/**/*.scss', styles);
   watch('./src/js/**/*.js', scripts);
   watch('./src/html/*.html', htmlInclude);
-  watch('./src/index.html', htmlInclude);
+  watch('./src/*.html', htmlInclude);
   watch('./src/resources/**', resources);
   watch('./src/img/**.jpg', imgToApp);
   watch('./src/img/**.jpeg', imgToApp);
