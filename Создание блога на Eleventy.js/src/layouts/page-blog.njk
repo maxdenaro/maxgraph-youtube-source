@@ -1,0 +1,31 @@
+{% include 'header.njk' %}
+
+<div class="blog-entries">
+		<div class="container">
+				<div class="col-md-9">
+						<div class="blog-posts">
+								<div class="row">
+
+										{% for post in collections.blog %}
+											<div class="col-md-12">
+													<div class="blog-post">
+															<img src="img/blog_post_1.png" alt="">
+															<div class="text-content">
+																	<span>{{post.data.blogDate}}</span>
+																	<h2>{{post.data.title}}</h2>
+																	<p>{{post.data.descr}}</p>
+																	<div class="simple-btn">
+																			<a href="{{post.url}}">continue reading</a>
+																	</div>
+															</div>
+													</div>
+											</div>
+
+										{% endfor %}
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+
+{% include 'footer.njk' %}

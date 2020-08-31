@@ -1,0 +1,25 @@
+{% include 'header.njk' %}
+
+<div class="blog-entries">
+		<div class="container">
+				<div class="col-md-9">
+						<div class="blog-posts">
+								<div class="row">
+										<div class="col-md-12">
+												<div class="single-blog-post">
+														<img src="{{thumbnail}}" alt="blog image" />
+														<div class="text-content">
+																<h2>{{title}}</h2>
+																<span>{{blogDate}}</span>
+																{{content | safe}}
+																<br><br><a href="/blog/">Back to Blog</a></p>
+														</div>
+												</div>
+										</div>
+								</div>
+						</div>
+				</div>
+		</div>
+</div>
+
+{% include 'footer.njk' %}
