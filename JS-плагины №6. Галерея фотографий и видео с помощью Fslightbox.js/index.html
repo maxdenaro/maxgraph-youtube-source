@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>fslightbox</title>
+</head>
+<body>
+	<div class="grid">
+		<div class="grid-item">
+			<a data-fslightbox="gal" href="img/1.jpg">
+				<img src="img/1.jpg" alt="image">
+			</a>
+		</div>
+		<div class="grid-item">
+			<a data-fslightbox="gal" href="1.mp4">
+				<video src="1.mp4"></video>
+			</a>
+		</div>
+		<div class="grid-item">
+			<a data-fslightbox="gal" href="img/2.jpg">
+				<img src="img/2.jpg" alt="image">
+			</a>
+		</div>
+		<div class="grid-item">
+			<a data-fslightbox="gal" href="img/3.jpg">
+				<img src="img/3.jpg" alt="image">
+			</a>
+		</div>
+		<div class="grid-item">
+			<a data-fslightbox="gal" href="img/4.jpg">
+				<img src="img/4.jpg" alt="image">
+			</a>
+		</div>
+		<div class="grid-item">
+			<a data-fslightbox="gal"
+				href="https://www.youtube.com/watch?v=pYyia_J7cAs&t=2s&ab_channel=MaxGraph-c%D0%B0%D0%B9%D1%82%D1%8B%D0%BA%D0%B0%D0%BA%D1%81%D1%82%D1%80%D0%B0%D1%81%D1%82%D1%8C">Video</a>
+		</div>
+	</div>
+
+	<button>Нажми!</button>
+
+
+	
+	<script src="fslightbox.js"></script>
+	<script>
+		document.querySelector('button').addEventListener('click', () => {
+			// fsLightboxInstances['gal'].open(0);
+			
+
+			lightbox.open();
+		});
+
+		fsLightboxInstances['gal'].props.onOpen = () => {
+			console.log(fsLightboxInstances)
+		};
+
+
+		const lightbox = new FsLightbox();
+
+		// set up props, like sources, types, events etc.
+		lightbox.props.sources = ['img/1.jpg', 'img/2.jpg'];
+		lightbox.props.onInit = () => console.log('Lightbox initialized!');
+
+		// lightbox.open();
+
+	</script>
+</body>
+</html>
