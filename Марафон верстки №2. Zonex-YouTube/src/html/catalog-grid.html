@@ -10,9 +10,16 @@
           <li class="catalog-columns__item"><button class="btn-reset main-link catalog-columns__btn" data-columns="5">5</button></li>
         </ul>
       </div>
-      <select name="" id="" class="catalog-select">
-        <option value="">123</option>
-      </select>
+      <div class="custom-select" tabindex="0">
+        <div class="custom-select__top">Sort by latest</div>
+        <div class="custom-select__dropdown">
+          <ul class="custom-select__list">
+            <li class="custom-select__item">Sort by latest</li>
+            <li class="custom-select__item">Sort by price</li>
+            <li class="custom-select__item">Sort by smth</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <div class="catalog-props__choice catalog-choice">
       <button class="btn-reset catalog-choice__clear">Clear all</button>
@@ -24,6 +31,7 @@
         <div class="product__image">
           <img src="img/prod-1.jpg" alt="prod 1">
         </div>
+        <span class="product__prop new">New</span>
         <h3 class="product__title">
           <a href="#">
             Eye Mesh Boat Shoes
@@ -61,8 +69,51 @@
     <li class="catalog-grid__item">
       <article class="product">
         <div class="product__image">
+          <span class="product__sale">Sale</span>
           <img src="img/prod-1.jpg" alt="prod 1">
         </div>
+        <span class="product__prop best">Best Seller</span>
+        <h3 class="product__title">
+          <a href="#">
+            Eye Mesh Boat Shoes
+          </a>
+        </h3>
+        <span class="product__price">$220.00</span>
+        <span class="product__oldprice">$165.00</span>
+      </article>
+    </li>
+    <li class="catalog-grid__item">
+      <article class="product">
+        <div class="product__image">
+          <img src="img/prod-1.jpg" alt="prod 1">
+        </div>
+        <h3 class="product__title">
+          <a href="#">
+            Eye Mesh Boat Shoes
+          </a>
+        </h3>
+        <span class="product__price">$220.00</span>
+      </article>
+    </li>
+    <li class="catalog-grid__item">
+      <article class="product">
+        <div class="product__image">
+          <img src="img/prod-1.jpg" alt="prod 1">
+        </div>
+        <h3 class="product__title">
+          <a href="#">
+            Eye Mesh Boat Shoes
+          </a>
+        </h3>
+        <span class="product__price">$220.00</span>
+      </article>
+    </li>
+    <li class="catalog-grid__item">
+      <article class="product">
+        <div class="product__image">
+          <img src="img/prod-1.jpg" alt="prod 1">
+        </div>
+        <span class="product__prop new">New</span>
         <h3 class="product__title">
           <a href="#">
             Eye Mesh Boat Shoes
@@ -96,6 +147,61 @@
         </h3>
         <span class="product__price">$220.00</span>
       </article>
+    </li>
+    <li class="catalog-grid__item">
+      <article class="product">
+        <div class="product__image">
+          <span class="product__sale">Sale</span>
+          <img src="img/prod-1.jpg" alt="prod 1">
+        </div>
+        <span class="product__prop best">Best Seller</span>
+        <h3 class="product__title">
+          <a href="#">
+            Eye Mesh Boat Shoes
+          </a>
+        </h3>
+        <span class="product__price">$220.00</span>
+        <span class="product__oldprice">$165.00</span>
+      </article>
+    </li>
+    <li class="catalog-grid__item">
+      <article class="product">
+        <div class="product__image">
+          <img src="img/prod-1.jpg" alt="prod 1">
+        </div>
+        <h3 class="product__title">
+          <a href="#">
+            Eye Mesh Boat Shoes
+          </a>
+        </h3>
+        <span class="product__price">$220.00</span>
+      </article>
+    </li>
+    <li class="catalog-grid__item">
+      <article class="product">
+        <div class="product__image">
+          <img src="img/prod-1.jpg" alt="prod 1">
+        </div>
+        <h3 class="product__title">
+          <a href="#">
+            Eye Mesh Boat Shoes
+          </a>
+        </h3>
+        <span class="product__price">$220.00</span>
+      </article>
+    </li>
+  </ul>
+  <ul class="pagination">
+    <li class="pagination__item"><a href="#" class="pagination__link pagination__link--current">1</a></li>
+    <li class="pagination__item"><a href="#" class="pagination__link">2</a></li>
+    <li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
+    <li class="pagination__item">
+      <a href="#" class="pagination__link">
+        Next
+        <svg class="">
+          <use xlink:href="img/sprite.svg#angle-right"></use>
+        </svg>
+      </a>
     </li>
   </ul>
 </div>

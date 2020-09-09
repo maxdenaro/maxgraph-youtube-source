@@ -2,12 +2,37 @@
   position: relative;
 
   &__image {
+    position: relative;
     margin-bottom: 20px;
 
     img {
       max-height: 100%;
       object-fit: cover;
     }
+  }
+
+  &__sale {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 2px solid var(--color-dark);
+    padding: 4px 10px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #111;
+  }
+
+  &__prop {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 16px;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #111;
+    background-position: left center;
+    background-repeat: no-repeat;
   }
 
   &__title {
@@ -32,4 +57,20 @@
     font-weight: 700;
     font-size: 13px;
   }
+
+  &__oldprice {
+    margin-left: 5px;
+    font-weight: 700;
+    font-size: 13px;
+    text-decoration: line-through;
+    color: #959595;
+  }
+}
+
+.new {
+  background-image: url("../img/new.png");
+}
+
+.best {
+  background-image: url("../img/best.png");
 }
