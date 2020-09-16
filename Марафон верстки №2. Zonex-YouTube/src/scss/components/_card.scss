@@ -1,0 +1,21 @@
+.card {
+  padding-top: 67px;
+}
+
+.card-content {
+  padding-top: 20px;
+}
+
+.card-top {
+  .container {
+    display: flex;
+  }
+
+  &__left {
+    width: 57.5%;
+  }
+
+  &__right {
+    width: calc(100% - 57.5%);
+  }
+}

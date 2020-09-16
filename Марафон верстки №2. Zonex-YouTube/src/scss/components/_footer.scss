@@ -15,6 +15,11 @@
     &:nth-child(2) {
       margin-left: -60px;
     }
+
+    &--flex {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &__item {
@@ -36,6 +41,22 @@
         }
       }
     }
+  }
+
+  &__select {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+
+    &-caption {
+      margin-right: 14px;
+      font-size: 13px;
+      color: var(--color-gray);
+    }
+  }
+
+  &__copy {
+    font-size: 13px;
   }
 
   &__link {
@@ -157,5 +178,25 @@
     &--pin {
       background-image: url("../img/pin.png");
     }
+  }
+}
+
+.footer--2 {
+  .footer__top {
+    border-top: 1px solid #eee;
+    padding-top: 42px;
+    padding-bottom: 19px;
+    padding-left: 11px;
+  }
+
+  .footer__column:nth-child(2) {
+    margin-left: 200px;
+  }
+
+  .footer__bottom {
+    border: none;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    padding-left: 5px;
   }
 }

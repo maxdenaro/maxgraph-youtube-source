@@ -35,3 +35,41 @@
 .catalog-header {
   padding-top: 38px;
 }
+
+.free-delivery {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 120;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  background-color: #111;
+
+  &__btn {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    transform: translateY(-50%);
+
+    svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: var(--color-white);
+    }
+  }
+}
+
+.card-page {
+  .header {
+    padding-top: 0;
+  }
+}

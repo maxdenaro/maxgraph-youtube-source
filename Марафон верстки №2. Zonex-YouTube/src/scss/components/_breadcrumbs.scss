@@ -36,3 +36,42 @@
     }
   }
 }
+
+.breadcrumbs .card-prev,
+.breadcrumbs .card-next {
+  display: none;
+}
+
+.card {
+  .breadcrumbs .card-prev,
+  .breadcrumbs .card-next {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--color-gray);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-dark);
+      transition: color 0.3s;
+    }
+  }
+
+  .breadcrumbs .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .breadcrumbs__list {
+    border-bottom: none;
+  }
+
+  .card-prev {
+    margin-left: auto;
+  }
+
+  .card-next {
+    margin-left: 20px;
+  }
+}
