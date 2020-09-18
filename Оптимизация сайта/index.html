@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		img {
+			width: 300px;
+		}
+
+	</style>
+</head>
+<body>
+	<img src="1.jpg" alt="" srcset="">
+	<div style="height: 3000px;"></div>
+	<div id="map" style="width: 600px; height: 400px"></div>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript">
+	</script>
+	<script type="text/javascript">
+
+		let flag = 0;
+
+		window.addEventListener('scroll', function(){
+			let scrollY = window.scrollY;
+			// console.log(scrollY)
+
+			let mapOffset = document.querySelector("#map").offsetTop;
+			console.log(mapOffset)
+
+			if ((scrollY >= mapOffset - 500) && (flag == 0)) {
+					// Функция ymaps.ready() будет вызвана, когда
+					// загрузятся все компоненты API, а также когда будет готово DOM-дерево.
+					ymaps.ready(init);
+
+					function init() {
+					// Создание карты.
+					var myMap = new ymaps.Map("map", {
+					// Координаты центра карты.
+					// Порядок по умолчанию: «широта, долгота».
+					// Чтобы не определять координаты центра карты вручную,
+					// воспользуйтесь инструментом Определение координат.
+					center: [55.76, 37.64],
+					// Уровень масштабирования. Допустимые значения:
+					// от 0 (весь мир) до 19.
+					zoom: 7
+					});
+				}
+
+				flag = 1;
+			}
+		});
+
+	</script>
+</body>
+</html>
