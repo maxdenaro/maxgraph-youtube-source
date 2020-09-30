@@ -87,11 +87,7 @@
           </div>
         </div>
         <div class="card-slider__main">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="img/card-main.jpg" alt="">
-            </div>
-          </div>
+          <img src="img/card-main.jpg" alt="">
         </div>
       </div>
     </div>
@@ -130,7 +126,7 @@
                 aria-label="Choice grey color" style="background-color: grey;"></button></li>
           </ul>
         </div>
-        <div class="card-info__select size-select">
+        <div class="card-info__select size-select card-info__second-select">
           <p class="size-select__selected">size: <span>Select a size</span></p>
           <ul class="size-select__list">
             <li class="size-select__item"><button class="size-select__btn btn-reset"
@@ -158,6 +154,52 @@
             </svg>
             clear
           </button>
+        </div>
+        <div class="card-info__stepper stepper">
+          <button class="btn-reset stepper__btn stepper__btn--minus stepper__btn--disabled" aria-label="minus">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#minus"></use>
+            </svg>
+          </button>
+          <input type="text" class="stepper__input" value="1" maxlength="5">
+          <button class="btn-reset stepper__btn stepper__btn--plus" aria-label="plus">
+            <svg class="">
+              <use xlink:href="img/sprite.svg#plus"></use>
+            </svg>
+          </button>
+        </div>
+        <button class="btn-reset card-info__btn card-info__btn--tocart">Add to cart</button>
+        <button class="btn-reset card-info__btn card-info__btn--towishlist">Add to wishlist</button>
+        <div class="card-info__bottom card-bottom">
+          <div class="card-bottom__item">
+            <span>Sku:</span>
+            FW511
+          </div>
+          <div class="card-bottom__item">
+            <span>Category:</span>
+            <a href="#">Trousers,</a>
+            <a href="#">Life style</a>
+          </div>
+          <div class="card-bottom__item">
+            <span>Tags:</span>
+            <a href="#">Designer</a>
+            <a href="#">Women</a>
+          </div>
+          <div class="card-bottom__social">
+            <span>Share:</span>
+            <ul class="social">
+              <li class="social__item"><a href="#" class="social__link social__link--tw" aria-label="Go to twitter"></a>
+              </li>
+              <li class="social__item"><a href="#" class="social__link social__link--fb"
+                  aria-label="Go to facebook"></a>
+              </li>
+              <li class="social__item"><a href="#" class="social__link social__link--in"
+                  aria-label="Go to instagram"></a>
+              </li>
+              <li class="social__item"><a href="#" class="social__link social__link--pin"
+                  aria-label="Go to pinterest"></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

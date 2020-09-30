@@ -5,6 +5,8 @@ import './components/marketing';
 import './components/catalog-filter-toggle';
 import './components/catalog-props';
 import './components/card-select';
+import './components/stepper';
+import './components/card-slider';
 import vars from '../js/_vars';
 import {resizeContent} from './functions/resize';
 import {scrollTo} from './functions/smooth-scroll';

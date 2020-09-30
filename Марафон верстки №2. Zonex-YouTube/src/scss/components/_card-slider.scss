@@ -2,6 +2,12 @@
   display: flex;
 
   &__thumb {
+    cursor: pointer;
+
+    img {
+      pointer-events: none;
+    }
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -9,5 +15,13 @@
 
   &__main {
     margin-left: 15px;
+    width: 686px;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
