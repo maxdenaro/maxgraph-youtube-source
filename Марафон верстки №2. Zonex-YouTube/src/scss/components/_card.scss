@@ -4,6 +4,10 @@
 
 .card-content {
   padding-top: 20px;
+
+  &__bottom {
+    padding-top: 70px;
+  }
 }
 
 .card-top {
@@ -323,6 +327,127 @@
 
     span {
       margin-right: 13px;
+    }
+  }
+}
+
+.card-description {
+  display: flex;
+  align-items: flex-start;
+
+  &__left {
+    padding-top: 30px;
+    width: 16%;
+  }
+
+  .simplebar-track.simplebar-vertical {
+    width: 3px;
+    background-color: #ccc;
+  }
+
+  .simplebar-scrollbar::before {
+    left: 0;
+    right: 0;
+    border-radius: 0;
+    width: 3px;
+    height: 100%;
+    background-color: var(--color-dark);
+    opacity: 1;
+  }
+
+  &__right {
+    padding-top: 21px;
+    padding-right: 120px;
+    padding-left: 125px;
+    width: 84%;
+  }
+
+  &__navigation {
+    padding: 23px 0;
+    width: 100%;
+    max-height: 210px;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__link {
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--color-gray);
+
+    &--active {
+      color: var(--color-dark);
+      pointer-events: none;
+    }
+  }
+
+  &__content {
+    display: none;
+
+    p {
+      margin-top: 0;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 26px;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+.card-related {
+  padding-top: 40px;
+
+  &__title {
+    margin-bottom: 40px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+  }
+
+  &__slider {
+    padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.related-pag {
+  left: 0;
+  bottom: 0;
+  text-align: left;
+
+  .swiper-pagination-bullet {
+    margin: 0 8px !important;
+    width: 6px;
+    height: 6px;
+    background-color: #ccc;
+    opacity: 0.5;
+  }
+
+  .swiper-pagination-bullet-active {
+    position: relative;
+    background-color: var(--color-dark);
+    opacity: 1;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      z-index: -1;
+      border-radius: 100%;
+      width: 20px;
+      height: 20px;
+      background-color: #ccc;
+      transform: translate(-50%, -50%);
     }
   }
 }

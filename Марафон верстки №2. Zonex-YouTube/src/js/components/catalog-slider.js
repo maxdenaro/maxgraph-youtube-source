@@ -10,4 +10,15 @@ const catalogSlider = new Swiper(vars.$catalogSlider, {
   },
 });
 
+const relatedSlider = new Swiper(vars.$cardRelatedSlider, {
+  loop: true,
+  slidesPerView: 4,
+  spaceBetween: 30,
+  pagination: {
+    el: '.related-pag',
+    type: 'bullets',
+    clickable: true,
+  },
+});
+
 

@@ -57,6 +57,18 @@
     text-decoration: line-through;
     color: #959595;
   }
+
+  &:hover {
+    .product-custom__price {
+      transform: translateY(-100%);
+      transition: transform 0.3s;
+    }
+
+    .product-custom__cart {
+      transform: translateY(-100%);
+      transition: transform 0.3s;
+    }
+  }
 }
 
 .product-prop {
@@ -68,6 +80,26 @@
   color: #111;
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+.product-custom {
+  overflow: hidden;
+  height: 18px;
+
+  &__price {
+    transition: transform 0.3s;
+  }
+
+  .to-cart {
+    font-weight: 700;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
+
+  &__cart {
+    text-transform: uppercase;
+    transition: transform 0.3s;
+  }
 }
 
 .new {

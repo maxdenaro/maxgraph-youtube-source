@@ -113,3 +113,18 @@ ul {
 .container-narrow {
   max-width: 1406px;
 }
+
+.to-top {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  padding: 14px 18px;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-white);
+}
