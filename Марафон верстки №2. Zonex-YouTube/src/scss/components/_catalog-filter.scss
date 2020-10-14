@@ -129,6 +129,7 @@
     padding-left: 15px;
     font-size: 13px;
     color: var(--color-gray);
+    transition: color 0.3s;
 
     &::before {
       content: "";
@@ -146,6 +147,11 @@
       left: 2px;
       top: 0;
       color: #aaa;
+    }
+
+    &:hover {
+      color: var(--color-dark);
+      transition: color 0.3s;
     }
   }
 
@@ -324,6 +330,7 @@
 .custom-select {
   position: relative;
   min-width: 115px;
+  user-select: none;
 
   &__dropdown {
     display: none;

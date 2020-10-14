@@ -15,6 +15,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
 
     &--user {
       background-image: url("../img/user.png");
@@ -46,6 +52,12 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
   }
 }
 

@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  overflow-anchor: none;
   margin: 0;
   font-family: "Jost", sans-serif;
   font-weight: 500;
@@ -127,4 +128,10 @@ ul {
   height: 48px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
   background-color: var(--color-white);
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: rotate(360deg);
+    transition: transform 0.3s;
+  }
 }

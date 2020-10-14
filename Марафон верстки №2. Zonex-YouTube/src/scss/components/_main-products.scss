@@ -36,6 +36,14 @@
       width: 12px;
       height: 21px;
       fill: var(--color-dark);
+      transition: transform 0.3s;
+    }
+
+    &:hover {
+      svg {
+        transform: translateY(5px);
+        transition: transform 0.3s;
+      }
     }
   }
 

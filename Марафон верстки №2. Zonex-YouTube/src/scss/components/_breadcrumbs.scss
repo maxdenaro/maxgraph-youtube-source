@@ -30,6 +30,12 @@
     font-size: 10px;
     text-transform: uppercase;
     color: var(--color-gray);
+    transition: color 0.3s;
+
+    &:hover {
+      color: var(--color-dark);
+      transition: color 0.3s;
+    }
 
     &--current {
       color: var(--color-dark);

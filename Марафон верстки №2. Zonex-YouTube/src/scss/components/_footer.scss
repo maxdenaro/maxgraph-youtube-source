@@ -60,8 +60,28 @@
   }
 
   &__link {
+    position: relative;
     font-size: 13px;
     color: var(--color-tundora);
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+        transition: opacity 0.3s;
+      }
+    }
 
     &--row {
       font-weight: 700;
@@ -161,6 +181,12 @@
     height: 16px;
     background-position: center;
     background-repeat: no-repeat;
+    transition: opacity 0.3s;
+
+    &:hover {
+      opacity: 0.7;
+      transition: opacity 0.3s;
+    }
 
     &--tw {
       background-image: url("../img/tw.png");

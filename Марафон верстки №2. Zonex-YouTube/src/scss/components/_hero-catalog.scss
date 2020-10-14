@@ -53,12 +53,28 @@
       border: 1px solid var(--color-dark);
       color: var(--color-white);
       background-color: var(--color-dark);
+      transition: all 0.3s;
+
+      &:hover {
+        border: 1px solid var(--color-dark);
+        color: var(--color-dark);
+        background-color: transparent;
+        transition: all 0.3s;
+      }
     }
 
     &--light {
       border: 1px solid var(--color-dark);
       color: var(--color-dark);
-      background-color: transparent
+      background-color: transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        border: 1px solid var(--color-dark);
+        color: var(--color-white);
+        background-color: var(--color-dark);
+        transition: all 0.3s;
+      }
     }
 
     &:not(:last-child) {
