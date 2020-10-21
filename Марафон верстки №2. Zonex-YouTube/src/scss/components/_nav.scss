@@ -1,20 +1,53 @@
 .nav {
   &__list {
     display: flex;
+
+    @include xs {
+      display: block;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 45px;
+
+      @include md {
+        margin-right: 0;
+      }
     }
   }
 
   &__link {
+    &:hover {
+      @include md {
+        &::before {
+          opacity: 0;
+        }
+      }
+    }
+
     &--current {
       &::before {
         opacity: 1;
         transition: opacity 0.15s;
+
+        @include md {
+          opacity: 0;
+        }
       }
     }
+
+    @include md {
+      display: inline-block;
+      border-bottom: 1px solid #bfbfbf;
+      padding: 10px 10%;
+      width: 100%;
+      font-size: 19px;
+    }
+  }
+
+  &--visible {
+    left: 0;
+    transition: left 0.3s;
   }
 }

@@ -26,18 +26,50 @@
     max-width: 560px;
     font-weight: 700;
     font-size: 72px;
+
+    @include md {
+      max-width: 500px;
+      font-size: 50px;
+    }
+
+    @include xs {
+      font-size: 45px;
+    }
   }
 
   &__descr {
     margin: 0;
     font-size: 18px;
+
+    @include md {
+      font-size: 14px;
+    }
   }
 
   &__image {
     position: absolute;
     right: 273px;
     bottom: 0;
+    width: 40%;
     max-height: 90%;
+
+    @include lg-max {
+      right: 100px;
+      width: 480px;
+    }
+
+    @include lg {
+      right: 50px;
+    }
+
+    @include md {
+      right: 0;
+      width: 350px;
+    }
+
+    @include sm {
+      display: none;
+    }
   }
 
   &__content {
@@ -47,6 +79,23 @@
     justify-content: center;
     padding: 0 260px;
     height: 100%;
+
+    @include lg {
+      padding: 0 100px;
+    }
+
+    @include md {
+      padding: 0;
+    }
+  }
+
+  @include lg-max {
+    height: 700px;
+  }
+
+  @include md {
+    height: 600px;
+    min-height: auto;
   }
 }
 
@@ -158,5 +207,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  @include xs {
+    left: 15px;
   }
 }

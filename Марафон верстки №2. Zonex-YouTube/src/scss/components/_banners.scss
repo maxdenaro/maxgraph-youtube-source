@@ -2,10 +2,18 @@
   &__container {
     padding-top: 50px;
     padding-bottom: 50px;
+
+    @include xs {
+      padding-bottom: 0;
+    }
   }
 
   &__list {
     display: flex;
+
+    @include md {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
@@ -14,6 +22,12 @@
 
     &:not(:last-child) {
       margin-right: 0.6%;
+    }
+
+    @include md {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
     }
   }
 }
@@ -39,10 +53,17 @@
     background-image: url("../img/accs.jpg");
   }
 
-
   &__title {
     margin: 0;
     margin-bottom: 20px;
     font-size: 36px;
+  }
+
+  @include md {
+    padding: 50px 20px;
+  }
+
+  @include sm {
+    padding-right: 150px;
   }
 }

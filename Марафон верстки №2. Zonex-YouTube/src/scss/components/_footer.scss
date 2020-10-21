@@ -3,17 +3,47 @@
     padding: 0 250px;
     padding-top: 98px;
     padding-bottom: 0;
+
+    @include lg {
+      padding: 0 100px;
+      padding-top: 98px;
+    }
+
+    @include md {
+      padding: 0;
+      padding-top: 80px;
+    }
   }
 
   &__top {
     display: flex;
     justify-content: space-between;
     padding-bottom: 95px;
+
+    @include sm {
+      flex-wrap: wrap;
+      padding-bottom: 50px;
+    }
   }
 
   &__column {
     &:nth-child(2) {
       margin-left: -60px;
+
+      @include md {
+        margin-left: 0;
+      }
+    }
+
+    &:last-child {
+      @include md {
+        width: 40%;
+      }
+
+      @include sm {
+        margin-top: 40px;
+        width: 100%;
+      }
     }
 
     &--flex {
@@ -38,6 +68,10 @@
 
         &:not(:last-child) {
           margin-right: 43px;
+
+          @include sm {
+            margin-right: 20px;
+          }
         }
       }
     }
@@ -87,6 +121,10 @@
       font-weight: 700;
       color: var(--color-dark);
     }
+
+    @include xs {
+      font-size: 12px;
+    }
   }
 
   &__title {
@@ -95,12 +133,20 @@
     font-weight: 700;
     font-size: 16px;
     text-transform: uppercase;
+
+    @include xs {
+      font-size: 14px;
+    }
   }
 
   &__form {
     margin-bottom: 25px;
     width: 646px;
     transform: translateY(3px);
+
+    @include md {
+      width: 100%;
+    }
   }
 
   &__text {
@@ -115,6 +161,17 @@
     justify-content: space-between;
     border-top: 1px solid #eee;
     padding: 40px 0;
+
+    @include xs {
+      flex-direction: column;
+      padding: 20px 0;
+    }
+  }
+
+  &__left {
+    @include xs {
+      margin-bottom: 20px;
+    }
   }
 
   &__social {

@@ -11,10 +11,18 @@
     justify-content: space-between;
     padding-top: 36px;
     padding-bottom: 36px;
+
+    @include xs {
+      padding: 20px 15px;
+    }
   }
 
   &__shop-nav {
     margin-left: 250px;
+
+    @include md {
+      margin-left: 0;
+    }
   }
 }
 
@@ -29,6 +37,11 @@
     height: 100%;
     fill: var(--color-dark);
     object-fit: cover;
+  }
+
+  @include xs {
+    width: 90px;
+    height: 18px;
   }
 }
 
@@ -71,5 +84,67 @@
 .card-page {
   .header {
     padding-top: 0;
+  }
+}
+
+.nav {
+  &__close {
+    @include md {
+      position: absolute;
+      right: 10%;
+      top: 4%;
+    }
+  }
+
+  @include md {
+    position: fixed;
+    left: -150vw;
+    top: 0;
+    padding: 10% 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #fff;
+    transition: left 0.3s;
+  }
+}
+
+.burger {
+  position: relative;
+  display: none;
+  width: 25px;
+  height: 18px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-dark);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-dark);
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-dark);
+    transform: translateY(-50%);
+  }
+
+  @include md {
+    display: block;
   }
 }

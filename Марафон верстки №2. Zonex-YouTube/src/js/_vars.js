@@ -21,4 +21,7 @@ export default {
   $sliderImg: document.querySelector('.card-slider__main img'),
   $cardDescrLink: document.querySelectorAll('.card-description__link'),
   $cardRelatedSlider: document.querySelector('.card-related__slider'),
+  $burger: document.querySelector('.burger'),
+  $navClose: document.querySelector('.nav__close'),
+  $nav: document.querySelector('.nav')
 }

@@ -4,6 +4,36 @@
 	}
 }
 
+@mixin lg-max {
+  @media (max-width: (1700px)) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: (1500px)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (max-width: (1200px)) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (max-width: (768px)) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media (max-width: (576px)) {
+    @content;
+  }
+}
+
 @mixin mobile {
 	@media (max-width: (1024px)) {
 		@content;
