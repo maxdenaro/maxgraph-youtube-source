@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Галерея</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="container header__container">
+			<a href="/" class="logo">Галерея</a>
+		</div>
+	</header>
+	<main class="main">
+		<div class="section content">
+			<div class="container content__container">
+				<form action="#" method="POST" class="form content__form">
+					<label class="file">
+						<span class="file__text">Выберите файл в формате jpg или png</span>
+						<span class="file__text"></span>
+						<input class="file__input" type="file" name="file" accept="image/jpeg,image/png">
+					</label>
+					<button class="btn" name="upload" disabled>Загрузить</button>
+				</form>
+				<ul class="gallery">
+					<li class="gallery__item">
+						<img src="exp.png" alt="image" class="gallery__image">
+						<button class="gallery__btn btn">
+							Удалить
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">&copy; Все права защищены</footer>
+</body>
+</html>
