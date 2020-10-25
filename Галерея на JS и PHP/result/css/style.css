@@ -1,0 +1,186 @@
+@font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy'),
+		url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy'),
+		url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+		url('../fonts/Gilroy-ExtraBold.woff') format('woff');
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: local('Gilroy'),
+		url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+		url('../fonts/Gilroy-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+	background-color: #131313;
+	color: #fff;
+	font-size: 18px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.main {
+	min-height: calc(100% - 162px);
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100%;
+}
+
+.container {
+	width: 100%;
+	max-width: 95vw;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.header {
+	padding: 23px 0;
+	height: 81px;
+	border-bottom: 1px solid #bfbfbf;
+}
+
+.header__container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+.nav__list {
+	display: flex;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.footer {
+	height: 81px;
+	text-align: center;
+	padding: 30px;
+	border-top: 1px solid #bfbfbf;
+}
+
+.content {
+	padding: 50px 0;
+}
+
+.file {
+	background-color: #fff;
+	color: #131313;
+	padding: 30px;
+	text-align: center;
+	max-width: 250px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.file:hover {
+	background-color: #ef0d33;
+	color: #fff;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.file__input {
+	opacity: 0;
+	position: absolute;
+}
+
+.btn {
+	background-color: #fff;
+	border: none;
+	padding: 7px 15px;
+	cursor: pointer;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:hover {
+	background-color: #ef0d33;
+	color: #fff;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.btn:disabled {
+	opacity: 0.4;
+	pointer-events: none;
+}
+
+.gallery {
+	padding: 50px 150px;
+}
+
+.gallery__item {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gallery__item:not(:last-child) {
+	margin-bottom: 30px;
+}
+
+.gallery__image {
+	max-width: 100%;
+	object-fit: cover;
+	max-height: 500px;
+}
+
+.gallery__btn {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 5;
+}
+
+.no-photo {
+	text-align: center;
+}
