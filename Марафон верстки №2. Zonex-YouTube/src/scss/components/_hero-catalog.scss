@@ -11,6 +11,10 @@
   &__container {
     position: relative;
   }
+
+  @include xs {
+    padding-top: 70px;
+  }
 }
 
 .catalog-slide {
@@ -36,18 +40,33 @@
   &__btns {
     display: flex;
     align-items: center;
+
+    @include xs {
+      display: block;
+      padding-bottom: 70px;
+    }
   }
 
   &__image {
     position: absolute;
     right: 19%;
     bottom: 0;
+
+    @include md {
+      right: 7%;
+      display: none;
+      width: 25%;
+    }
   }
 
   &__link {
     display: inline-block;
     padding: 16px 43px;
     font-size: 13px;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
 
     &--dark {
       border: 1px solid var(--color-dark);
@@ -75,11 +94,19 @@
         background-color: var(--color-dark);
         transition: all 0.3s;
       }
-    }
 
-    &:not(:last-child) {
-      margin-right: 15px;
+      @include xs {
+        margin-top: 20px;
+      }
     }
+  }
+
+  @include sm {
+    padding: 70px;
+  }
+
+  @include xs {
+    padding: 20px;
   }
 }
 
@@ -115,9 +142,21 @@
       transition: fill 0.3s;
     }
   }
+
+  @include sm {
+    left: 10px;
+  }
+
+  @include xs {
+    display: none;
+  }
 }
 
 .hero-next-btn {
   left: auto;
   right: 30px;
+
+  @include sm {
+    right: 10px;
+  }
 }

@@ -23,5 +23,7 @@ export default {
   $cardRelatedSlider: document.querySelector('.card-related__slider'),
   $burger: document.querySelector('.burger'),
   $navClose: document.querySelector('.nav__close'),
-  $nav: document.querySelector('.nav')
+  $nav: document.querySelector('.nav'),
+  $mobileFiltersOpen: document.querySelector('.catalog-mobile-filters'),
+  $catalogFilters: document.querySelector('.catalog-filters'),
 }

@@ -102,15 +102,15 @@ ul {
     transition: opacity 0.15s;
   }
 
-  &--white {
-    color: var(--color-white);
-  }
-
   &:hover {
     &::before {
       opacity: 1;
       transition: opacity 0.15s;
     }
+  }
+
+  &--white {
+    color: var(--color-white);
   }
 }
 

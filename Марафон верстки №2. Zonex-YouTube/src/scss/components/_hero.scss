@@ -1,6 +1,5 @@
 .hero {
   position: relative;
-  height: 100vh;
   height: 1080px;
   min-height: 700px;
   background-color: var(--quill-gray);
@@ -109,7 +108,8 @@
   }
 }
 
-.banner-pag {
+.banner-pag,
+.hero-pag {
   left: 50%;
   bottom: 46px;
   transform: translateX(-50%);
@@ -154,11 +154,6 @@
   background-color: var(--color-white);
   transform: translateX(-150vw);
   transition: transform 0.3s;
-
-  &--visible {
-    transform: translateX(0);
-    transition: transform 0.3s;
-  }
 
   &__text {
     margin-left: 10px;
@@ -207,6 +202,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+  }
+
+  &--visible {
+    transform: translateX(0);
+    transition: transform 0.3s;
   }
 
   @include xs {

@@ -183,7 +183,9 @@ const tinypng = () => {
     .pipe(tiny({
       key: '9JGFXhzcvJn1G7PvGRBmZMspkDDtGpwV',
       sigFile: './app/img/.tinypng-sigs',
-      log: true
+      log: true,
+      parallel: true,
+      parallelMax: 100,
     }))
     .pipe(dest('./app/img'))
 }

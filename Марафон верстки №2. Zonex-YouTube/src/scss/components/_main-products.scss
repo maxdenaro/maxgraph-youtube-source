@@ -72,7 +72,6 @@
     @include sm {
       font-size: 20px;
     }
-
   }
 }
 
@@ -85,18 +84,6 @@
     margin-bottom: 80px;
     width: 18.5%;
 
-    &:nth-child(5n) {
-      margin-right: 0;
-
-      @include md {
-        margin-right: 5%;
-      }
-
-      @include xs {
-        margin-right: 4%;
-      }
-    }
-
     &:nth-last-child(-n+5) {
       margin-bottom: 0;
 
@@ -106,6 +93,18 @@
 
       @include xs {
         margin-bottom: 30px;
+      }
+    }
+
+    &:nth-child(5n) {
+      margin-right: 0;
+
+      @include md {
+        margin-right: 5%;
+      }
+
+      @include xs {
+        margin-right: 4%;
       }
     }
 
@@ -131,8 +130,8 @@
     }
 
     @include xs {
-      width: 48%;
       margin-right: 4%;
+      width: 48%;
     }
   }
 }

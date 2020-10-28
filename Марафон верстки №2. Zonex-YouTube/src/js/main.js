@@ -10,6 +10,7 @@ import './components/card-slider';
 import './components/card-bottom-tabs';
 import './components/products';
 import './components/burger';
+import './components/mobile-filter';
 import vars from '../js/_vars';
 import {resizeContent} from './functions/resize';
 import {scrollTo} from './functions/smooth-scroll';

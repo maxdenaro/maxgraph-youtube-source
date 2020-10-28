@@ -1,6 +1,14 @@
 .card-slider {
   display: flex;
 
+  &__thumbs {
+    @include xs {
+      display: flex;
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+  }
+
   &__thumb {
     cursor: pointer;
 
@@ -10,6 +18,15 @@
 
     &:not(:last-child) {
       margin-bottom: 10px;
+    }
+
+    @include xs {
+      flex-shrink: 0;
+      margin-bottom: 0 !important; // stylelint-disable-line declaration-no-important
+
+      &:not(:last-child) {
+        margin-right: 5px !important; // stylelint-disable-line declaration-no-important
+      }
     }
   }
 
@@ -23,5 +40,14 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @include xs {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  @include xs {
+    flex-direction: column-reverse;
   }
 }

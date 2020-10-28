@@ -1,4 +1,8 @@
 .footer {
+  &__container {
+    max-width: 1920px;
+  }
+
   &__content {
     padding: 0 250px;
     padding-top: 98px;
@@ -27,14 +31,6 @@
   }
 
   &__column {
-    &:nth-child(2) {
-      margin-left: -60px;
-
-      @include md {
-        margin-left: 0;
-      }
-    }
-
     &:last-child {
       @include md {
         width: 40%;
@@ -43,6 +39,14 @@
       @include sm {
         margin-top: 40px;
         width: 100%;
+      }
+    }
+
+    &:nth-child(2) {
+      margin-left: -60px;
+
+      @include md {
+        margin-left: 0;
       }
     }
 
@@ -269,10 +273,62 @@
     padding-top: 42px;
     padding-bottom: 19px;
     padding-left: 11px;
+
+    @include md {
+      flex-wrap: wrap;
+    }
+  }
+
+  .footer__column:first-child {
+    @include xs {
+      margin-bottom: 30px;
+      width: 100%;
+
+      .footer__social {
+        justify-content: center;
+      }
+    }
+  }
+
+  .footer__column:last-child {
+    @include md {
+      margin-top: 30px;
+      width: 100%;
+
+      .footer__select {
+        margin-right: 50px;
+        margin-left: 0;
+      }
+    }
+
+    @include xs {
+      justify-content: center;
+
+      .footer__select {
+        margin-right: 30px;
+        margin-left: 0;
+      }
+
+      .footer__select:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   .footer__column:nth-child(2) {
     margin-left: 200px;
+
+    @include lg {
+      margin-left: 0;
+    }
+
+    @include xs {
+      width: 100%;
+
+      .footer__list--row {
+        justify-content: center;
+      }
+    }
   }
 
   .footer__bottom {
@@ -280,5 +336,12 @@
     padding-right: 10px;
     padding-bottom: 20px;
     padding-left: 5px;
+  }
+
+  .footer__content {
+    @include lg-max {
+      padding-right: 0;
+      padding-left: 0;
+    }
   }
 }

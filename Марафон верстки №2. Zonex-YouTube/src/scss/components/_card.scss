@@ -13,16 +13,33 @@
 .card-top {
   .container {
     display: flex;
+
+    @include sm {
+      flex-wrap: wrap;
+    }
   }
 
   &__left {
     width: 57.5%;
+
+    @include sm {
+      width: 100%;
+    }
   }
 
   &__right {
     padding-top: 57px;
     padding-left: 10.7%;
     width: calc(100% - 57.5%);
+
+    @include lg {
+      padding-left: 5%;
+    }
+
+    @include sm {
+      padding-left: 0;
+      width: 100%;
+    }
   }
 }
 
@@ -213,11 +230,19 @@
     display: flex;
     align-items: center;
     margin-bottom: 8px;
+
+    @include lg {
+      flex-wrap: wrap;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 5px;
+    }
+
+    @include lg {
+      margin-bottom: 5px;
     }
   }
 
@@ -320,6 +345,12 @@
     color: var(--color-gray);
   }
 
+  &__item {
+    @include md {
+      margin-bottom: 5px;
+    }
+  }
+
   &__social {
     display: flex;
     align-items: center;
@@ -327,6 +358,10 @@
 
     span {
       margin-right: 13px;
+    }
+
+    @include sm {
+      width: 100%;
     }
   }
 }
@@ -338,6 +373,14 @@
   &__left {
     padding-top: 30px;
     width: 16%;
+
+    @include md {
+      width: 35%;
+    }
+
+    @include xs {
+      width: 100%;
+    }
   }
 
   .simplebar-track.simplebar-vertical {
@@ -360,6 +403,17 @@
     padding-right: 120px;
     padding-left: 125px;
     width: 84%;
+
+    @include md {
+      padding-right: 50px;
+      padding-left: 50px;
+    }
+
+    @include xs {
+      padding-right: 0;
+      padding-left: 0;
+      width: 100%;
+    }
   }
 
   &__navigation {
@@ -406,6 +460,10 @@
       display: block;
     }
   }
+
+  @include xs {
+    flex-wrap: wrap;
+  }
 }
 
 .card-related {
@@ -419,9 +477,9 @@
   }
 
   &__slider {
-    padding-bottom: 90px;
     position: relative;
     overflow: hidden;
+    padding-bottom: 90px;
   }
 }
 
@@ -431,7 +489,7 @@
   text-align: left;
 
   .swiper-pagination-bullet {
-    margin: 0 8px !important;
+    margin: 0 8px !important; // stylelint-disable-line declaration-no-important
     width: 6px;
     height: 6px;
     background-color: #ccc;

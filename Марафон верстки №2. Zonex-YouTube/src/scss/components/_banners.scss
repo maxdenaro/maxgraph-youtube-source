@@ -41,6 +41,12 @@
   background-repeat: no-repeat;
   background-color: #e9e4df;
 
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 36px;
+  }
+
   &--midseason {
     background-image: url("../img/midseason.jpg");
   }
@@ -51,12 +57,6 @@
 
   &--accs {
     background-image: url("../img/accs.jpg");
-  }
-
-  &__title {
-    margin: 0;
-    margin-bottom: 20px;
-    font-size: 36px;
   }
 
   @include md {

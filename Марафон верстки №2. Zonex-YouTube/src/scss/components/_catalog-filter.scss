@@ -1,11 +1,46 @@
 .catalog-filters {
+  margin-right: 30px;
   padding-top: 27px;
   padding-right: 62px;
   width: 309px;
-  margin-right: 30px;
+
+  @include md {
+    width: 50%;
+  }
+
+  @include sm {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 30;
+    display: none;
+    padding: 30px 40px;
+    width: 100%;
+    background: #fff;
+  }
+}
+
+.catalog-filters--open {
+  display: block;
+}
+
+.catalog-mobile-filters {
+  display: none;
+
+  @include sm {
+    display: inline-flex;
+    align-items: center;
+
+    svg {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
 }
 
 .catalog-content {
+  position: relative;
   min-height: 500px;
 
   .container {
@@ -102,6 +137,10 @@
     }
   }
 
+  &:last-child {
+    border-bottom: 1px solid #eee;
+  }
+
   &--open {
     .catalog-filter__bottom {
       display: block;
@@ -112,10 +151,6 @@
         display: none;
       }
     }
-  }
-
-  &:last-child {
-    border-bottom: 1px solid #eee;
   }
 }
 
@@ -178,10 +213,24 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 70px;
+
+    @include md {
+      justify-content: space-between;
+    }
   }
 
   &__item {
     margin-bottom: 79px;
+
+    @include md {
+      margin-right: 0 !important; // stylelint-disable-line declaration-no-important
+      margin-bottom: 50px;
+      width: 47% !important; // stylelint-disable-line declaration-no-important
+    }
+
+    @include xs {
+      width: 48% !important; // stylelint-disable-line declaration-no-important
+    }
   }
 }
 
@@ -277,6 +326,10 @@
       }
     }
   }
+
+  @include md {
+    display: none;
+  }
 }
 
 .catalog-choice {
@@ -333,19 +386,19 @@
   user-select: none;
 
   &__dropdown {
-    display: none;
     position: absolute;
     left: 0;
     top: calc(100% + 2px);
     z-index: 20;
+    display: none;
     padding: 10px;
     width: 100%;
     background-color: var(--color-white);
   }
 
   &__item {
-    cursor: pointer;
     transition: color 0.3s;
+    cursor: pointer;
 
     &:not(:last-child) {
       margin-bottom: 10px;
