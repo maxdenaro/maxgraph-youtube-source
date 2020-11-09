@@ -1,0 +1,150 @@
+.product {
+	border: 1px solid #d9d9d9;
+	border-radius: 4px;
+	padding: 20px;
+	padding-top: 9px;
+	font-size: 14px;
+	background-color: #fff;
+}
+
+.product__image {
+	position: relative;
+	overflow: hidden;
+	display: block;
+	height: 162px;
+}
+
+.image-switch {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.image-switch__item {
+	flex-grow: 1;
+	cursor: pointer;
+}
+
+.image-switch__img {
+	position: absolute;
+	left: 50%;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	transform: translateX(-50%);
+	pointer-events: none;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+}
+
+.image-switch__img img {
+	display: block;
+	max-width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.image-switch__item:first-child .image-switch__img {
+	opacity: 1;
+	z-index: -1;
+}
+
+.image-switch__item:hover .image-switch__img {
+	opacity: 1;
+	z-index: -1;
+}
+
+.image-pagination {
+	position: absolute;
+	z-index: 30;
+	left: 0;
+	bottom: 15px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.image-pagination__item {
+	display: block;
+	width: 4px;
+	height: 4px;
+	border-radius: 100%;
+	margin: 0 3px;
+	background-color: #c4c4c4;
+}
+
+.image-pagination__item--active {
+	background-color: var(--color-accent);
+}
+
+.product__title {
+	margin-bottom: 8px;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: var(--color-dark);
+}
+
+.product__props {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.product__rating {
+	margin-right: 10px;
+	display: inline-flex;
+	align-items: center;
+	color: var(--color-accent);
+	font-weight: 600;
+}
+
+.product__rating svg {
+	fill: currentColor;
+	margin-right: 8px;
+}
+
+.product__testimonials {
+	color: var(--color-light);
+}
+
+.product__info {
+	margin-bottom: 17px;
+	font-size: 12px;
+	color: var(--color-light);
+}
+
+.product__term {
+	display: block;
+	margin-bottom: 7px;
+}
+
+.product__available {
+	display: block;
+}
+
+.product-price {
+	margin-bottom: 17px;
+	display: flex;
+	align-items: center;
+}
+
+.product-price__current {
+	margin-right: 12px;
+	font-size: 24px;
+	color: var(--color-dark);
+}
+
+.product-price__old {
+	font-size: 12px;
+	color: var(--color-light);
+	text-decoration: line-through;
+}
