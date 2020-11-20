@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>tabs</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="tabs">
+		<ul class="tabs__list">
+			<li class="tabs__item"><button class="tabs__btn tabs__btn--active" data-tabs-path="main">Главная</button></li>
+			<li class="tabs__item"><button class="tabs__btn" data-tabs-path="archive">Архив</button></li>
+			<li class="tabs__item"><button class="tabs__btn" data-tabs-path="settings">Настройки</button></li>
+		</ul>
+		<div class="tabs__content tabs__content--active" data-tabs-target="main">
+			<div class="content">
+				<h2 class="content__title">Добро пожаловать!</h2>
+				<p class="content__descr">Здесь находятся все ваши активные заказы.</p>
+				<ul class="content__list">
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/1.png');">
+							<span class="content__text">Занятия йогой</span>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/2.png');">
+							<span class="content__text">Кардио</span>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/3.png');">
+							<span class="content__text">Силовые тренировки</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tabs__content" data-tabs-target="archive">
+			<div class="content">
+				<h2 class="content__title">Добро пожаловать!2</h2>
+				<p class="content__descr">Здесь находятся все ваши активные заказы.</p>
+				<ul class="content__list">
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/1.png');">
+							<span class="content__text">Занятия йогой</span>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/2.png');">
+							<span class="content__text">Кардио</span>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/3.png');">
+							<span class="content__text">Силовые тренировки</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="tabs__content" data-tabs-target="settings">
+			<div class="content">
+				<h2 class="content__title">Добро пожаловать!3</h2>
+				<p class="content__descr">Здесь находятся все ваши активные заказы.</p>
+				<ul class="content__list">
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/1.png');">
+							<span class="content__text">Занятия йогой</span>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/2.png');">
+							<span class="content__text">Кардио</span>
+						</a>
+					</li>
+					<li class="content__item">
+						<a href="#" class="content__link" style="background-image: url('./img/3.png');">
+							<span class="content__text">Силовые тренировки</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<button class="tabs__arrow tabs__arrow--prev" aria-label="Назад">
+			<svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.46967 6.53033C0.176777 6.23744 0.176777 5.76256 0.46967 5.46967L5.24264 0.696699C5.53553 0.403806 6.01041 0.403806 6.3033 0.696699C6.59619 0.989592 6.59619 1.46447 6.3033 1.75736L2.06066 6L6.3033 10.2426C6.59619 10.5355 6.59619 11.0104 6.3033 11.3033C6.01041 11.5962 5.53553 11.5962 5.24264 11.3033L0.46967 6.53033ZM21 6.75H1V5.25H21V6.75Z"
+					/>
+			</svg>
+		</button>
+		<button class="tabs__arrow tabs__arrow--next" aria-label="Вперед">
+			<svg width="21" height="12" viewBox="0 0 21 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M20.5303 6.53033C20.8232 6.23744 20.8232 5.76256 20.5303 5.46967L15.7574 0.696699C15.4645 0.403806 14.9896 0.403806 14.6967 0.696699C14.4038 0.989592 14.4038 1.46447 14.6967 1.75736L18.9393 6L14.6967 10.2426C14.4038 10.5355 14.4038 11.0104 14.6967 11.3033C14.9896 11.5962 15.4645 11.5962 15.7574 11.3033L20.5303 6.53033ZM0 6.75H20V5.25H0V6.75Z"
+				/>
+			</svg>
+		</button>
+	</div>
+	<script src="js/tabs.js"></script>
+</body>
+</html>
