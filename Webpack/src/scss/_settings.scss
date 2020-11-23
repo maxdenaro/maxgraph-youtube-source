@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  overflow-anchor: none;
+  font-family: "asd", sans-serif;
+  background-color: var(--color-white);
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important; // stylelint-disable-line declaration-no-important
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
