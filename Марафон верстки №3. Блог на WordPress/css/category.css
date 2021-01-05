@@ -1,0 +1,15 @@
+.category-banner {
+	height: 180px;
+	background-color: #f1f2f8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.category-banner__title {
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 38px;
+	display: flex;
+	color: var(--accent-color);
+}
