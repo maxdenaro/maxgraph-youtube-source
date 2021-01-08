@@ -1,0 +1,3 @@
+AOS.init({
+	disable: 'phone'
+});
