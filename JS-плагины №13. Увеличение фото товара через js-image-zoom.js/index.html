@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vertical Slider</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/slider.css">
+</head>
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-slider">
+				<div class="card-slider__nav slider-nav">
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+					<div class="slider-nav__item" tabindex="0"><img src="img/macbook.jpg" alt=""></div>
+				</div>
+				<div class="card-slider__block slider-block">
+					<div class="swiper-slide" id="slide-image">
+						<img src="img/macbook.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="card-info">
+				<span class="vendor">Артикул: 879876</span>
+				<h1 class="title">Ноутбук Apple MacBook Pro 16 TB i7 2.6/16/512 SSD SG MVVJ2RU/A</h1>
+				<div class="testimonials">
+					<div class="rating">
+						<img src="img/star.svg" alt="Рейтинг 5 из 5">
+						<img src="img/star.svg" alt="">
+						<img src="img/star.svg" alt="">
+						<img src="img/star.svg" alt="">
+						<img src="img/star.svg" alt="">
+					</div>
+					<a href="#" class="testimonials__link">Отзывы 83</a>
+				</div>
+				<span class="available">В началии: 13 шт</span>
+				<div class="price">
+					<span class="price__current">190 789 ₽</span>
+					<span class="price__old">194 578 ₽</span>
+				</div>
+				<button class="buy">Купить</button>
+			</div>
+		</div>
+	</div>
+	<div class="modal">
+		<div class="modal__container" role="dialog" aria-modal="true" data-graph-target="one">
+			<button class="btn-reset modal__close">Закрыть</button>
+			<div class="modal-content">
+				Модальное окно
+			</div>
+		</div>
+	</div>
+	<div class="height"></div>
+	<script src="js/modal.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js" type="application/javascript"></script>
+	<script src="js/slider.js"></script>
+</body>
+</html>

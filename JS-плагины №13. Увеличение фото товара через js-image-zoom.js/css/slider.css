@@ -1,0 +1,169 @@
+body {
+	background-color: #fafafa;
+}
+
+.card {
+	display: flex;
+}
+
+.card-slider {
+	width: 592px;
+	height: 490px;
+	margin-right: 60px;
+	display: flex;
+}
+
+.card-info {
+	width: calc(100% - 592px - 60px);
+	padding-right: 62px;
+}
+
+.slider-nav {
+	width: 82px;
+	margin-right: 20px;
+}
+
+.slider-nav__item {
+	height: 82px;
+	width: 100%;
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.slider-nav__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.slider-nav__item img {
+	max-width: 80%;
+	max-height: 80%;
+}
+
+.slider-block {
+	width: calc(100% - 82px - 20px);
+	background-color: #fff;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+}
+
+.swiper-slide {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-slide img {
+	width: 80%;
+	height: 80%;
+}
+
+.vendor {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #808080;
+	margin-bottom: 40px;
+}
+
+.title {
+	margin: 0;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 35px;
+	color: #4D4D4D;
+}
+
+.testimonials {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.testimonials__link {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	color: #5D71DD;
+	border-bottom: 1px solid #5D71DD;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+}
+
+.rating img:not(:last-child) {
+	margin-right: 4px;
+}
+
+.available {
+	display: inline-block;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #808080;
+	margin-bottom: 40px;
+}
+
+.price {
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 40px;
+}
+
+.price__current {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 42px;
+	color: #4D4D4D;
+	margin-right: 40px;
+}
+
+.price__old {
+	font-size: 18px;
+	line-height: 25px;
+	color: #808080;
+	text-decoration: line-through;
+	transform: translateY(-5px);
+}
+
+.buy {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #FFFFFF;
+	background-color: #5D71DD;
+	width: 100%;
+	height: 45px;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-center {
+	text-align: center;
+}
+
+.modal-open {
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+	padding: 0;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 19px;
+	color: #5D71DD;
+	border-bottom: 1px solid #5D71DD;
+}

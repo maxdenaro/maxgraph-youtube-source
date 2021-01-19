@@ -1,0 +1,31 @@
+@import 'global.css';
+@import 'normalize.css';
+
+:root {
+	--gutter: 20px;
+}
+
+.container {
+	/* max-width: 1234px; */
+	width: 1244px;
+	padding: 0 var(--gutter);
+	margin: 0 auto;
+}
+
+.height {
+	height: 3000px;
+}
+
+
+.js-image-zoom__zoomed-area {
+	z-index: 10;
+	background: #5D71DD !important;
+	opacity: 0.3 !important;
+}
+
+.js-image-zoom__zoomed-image {
+	z-index: 10;
+	background: #FFFFFF;
+	border: 1px solid #D9D9D9;
+	border-radius: 4px;
+}
