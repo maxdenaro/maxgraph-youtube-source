@@ -415,6 +415,17 @@ img {
 	padding: 24px 0;
 }
 
+.get-started {
+	padding-left: calc((100% - 1110px) / 2);
+	padding-right: 15px;
+}
+
+@media (max-width: 1140px) {
+	.get-started {
+		padding-left: 15px;
+	}
+}
+
 @media (max-width: 992px) {
 	.services-list {
 		gap: 50px;
