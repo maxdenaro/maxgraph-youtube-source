@@ -1,0 +1,33 @@
+.accordion__control {
+	width: 100%;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.accordion__content {
+	max-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0 20px;
+	will-change: max-height;
+	transition: all 0.3s ease-out;
+	box-sizing: content-box;
+}
+
+.accordion__title {
+	font-weight: bold;
+	font-size: 1.17em;
+}
+
+.accordion__icon {
+	transition: transform 0.3s ease-out;
+}
+
+.open .accordion__icon {
+	transform: rotate(45deg);
+}
+
+.open .accordion__content {
+	opacity: 1;
+	padding: 20px;
+}
