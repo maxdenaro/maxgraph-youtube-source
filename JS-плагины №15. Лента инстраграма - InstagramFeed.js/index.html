@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		#insta {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			grid-auto-rows: 400px;
+			gap: 30px;
+			list-style: none;
+		}
+
+		
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+	</style>
+</head>
+
+<body>
+	<ul id="insta"></ul>
+	<script src="InstagramFeed.min.js"></script>
+	<script>
+		const insta = document.querySelector('#insta');
+		(function () {
+			new InstagramFeed({
+				'username': 'max.denaro',
+				// 'container': document.getElementById("insta"),
+				'display_profile': false,
+				'display_biography': false,
+				'display_gallery': true,
+				'display_captions': true,
+				'callback': function(data){
+					let instaArray = data.edge_owner_to_timeline_media.edges;
+
+					for (let item of instaArray) {
+						console.log(item.node)
+						let element = item.node;
+						insta.insertAdjacentHTML('afterbegin', `
+							<li>
+								<a href="https://www.instagram.com/p/${element.shortcode}/" target="_blank">
+									<img src="${element.thumbnail_src}"
+										alt="${element.accessibility_caption}">
+								</a>
+							</li>
+						`);
+					}
+				},
+				'styling': false,
+				'items': 8,
+				'items_per_row': 4,
+				'margin': 1
+			});
+		})();
+	</script>
+</body>
+
+</html>
