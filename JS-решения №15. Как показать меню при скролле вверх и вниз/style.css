@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fafafa;
+}
+
+.content {
+	height: 5000px;
+}
+
+.header {
+	background-color: gray;
+	height: 80px;
+	width: 100%;
+}
+
+.header--fixed {
+	position: fixed;
+	left: 0;
+	top: 0;
+}
+
+.first {
+	height: 100vh;
+	background-color: crimson;
+}
