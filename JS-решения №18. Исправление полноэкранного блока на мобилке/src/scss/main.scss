@@ -1,0 +1,26 @@
+// @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
+
+@import "./components/header";
+
+body {
+  background-color: #333;
+}
+
+.hero {
+  position: relative;
+  margin: 0 auto;
+  height: 100vh;
+  height: calc(var(--vh) * 100);
+  max-width: 360px;
+  background-color: wheat;
+
+  &__bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    background-color: crimson;
+    color: #fff;
+  }
+}
