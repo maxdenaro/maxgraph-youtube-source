@@ -1,0 +1,113 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/NotoSansRegular.woff2') format('woff2');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/NotoSansSemiBold.woff2') format('woff2');
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+}
+
+:root {
+	--color-dark: #4d4d4d;
+	--color-light: #808080;
+	--color-accent: #5d71dd;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 100px; /* для удобства */
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+}
+
+.stepper {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width: 150px;
+	height: 50px;
+	user-select: none;
+}
+
+.stepper__field {
+	overflow: hidden;
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	width: 100%;
+	height: 100%;
+	padding-left: 20px;
+}
+
+.stepper__input {
+	border: none;
+	width: 10px;
+	height: 100%;
+	outline: none;
+	font-weight: 700;
+	min-width: 2ex;
+}
+
+.stepper__text {
+	font-weight: 700;
+}
+
+.stepper__btns {
+	position: absolute;
+	right: 2px;
+	top: 50%;
+	display: flex;
+	flex-direction: column;
+	border-left: 1px solid #e5e5e5;
+	width: 20%;
+	height: calc(100% - 2px);
+	transform: translateY(-50%);
+}
+
+.stepper__btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	border: none;
+	height: 50%;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.stepper__btn--disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Stepper</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="stepper">
+		<label class="stepper__field">
+			<input type="text" value="1" maxlength="3" class="stepper__input">
+			<span class="stepper__text">шт</span>
+		</label>
+		<div class="stepper__btns">
+			<button class="stepper__btn stepper__btn--up" aria-label="Увеличить количество">
+				<svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+					<g>
+						<g>
+							<path d="M3.904-.035L-.003 3.151 1.02 5.03l2.988-2.387 2.988 2.387 1.022-1.88-3.89-3.186z"></path>
+						</g>
+					</g>
+				</svg>
+			</button>
+			<button class="stepper__btn stepper__btn--down stepper__btn--disabled" aria-label="Уменьшить количество">
+				<svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+					<g>
+						<g>
+							<path d="M3.904 5.003L-.003 1.818 1.02-.062l2.988 2.386L6.995-.063l1.022 1.88-3.89 3.186z"></path>
+						</g>
+					</g>
+				</svg>
+			</button>
+		</div>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+</html>
