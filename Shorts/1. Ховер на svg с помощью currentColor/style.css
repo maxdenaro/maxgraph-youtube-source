@@ -1,0 +1,42 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	padding: 50px;
+	font-family: 'font', sans-serif;
+	background-color: #333;
+}
+
+.link {
+	display: inline-flex;
+	align-items: center;
+	color: wheat;
+	transition: color 0.3s;
+}
+
+.link__icon {
+	margin-right: 0.3em;
+	width: 1.5em;
+	height: 1.5em;
+	fill: currentColor;
+}
+
+.link:hover {
+	color: crimson;
+}

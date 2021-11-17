@@ -1,0 +1,13 @@
+.map {
+	width: 500px;
+	height: 500px;
+	background-color: #333;
+}
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1);
+}
