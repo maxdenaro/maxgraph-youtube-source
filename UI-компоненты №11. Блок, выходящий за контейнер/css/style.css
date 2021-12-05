@@ -1,0 +1,41 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 100px 0; /* для удобства */
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+}
+
+.content {
+	display: flex;
+	padding-left: max(15px, calc((100% - 1530px) / 2));
+}
+
+.container {
+	max-width: 1560px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.left {
+	width: 490px;
+	margin-right: 30px;
+	flex-shrink: 0;
+	min-height: 398px;
+	background-color: #c4c4c4;
+}
+
+.right {
+	width: calc(100% - 490px - 30px);
+	min-height: 398px;
+	background-color: #c4c4c4;
+}
