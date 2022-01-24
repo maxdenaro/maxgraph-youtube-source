@@ -33,16 +33,15 @@ try {
 
   // Настройки вашей почты
   $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
-  $mail->Username   = 'maxgraph23@gmail.com'; // Логин на почте
-  $mail->Password   = 'fsomktmprmtktavv'; // Пароль на почте
+  $mail->Username   = ''; // Логин на почте
+  $mail->Password   = ''; // Пароль на почте
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('maxgraph23@gmail.com', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
+  $mail->setFrom('', 'Заявка с вашего сайта'); // Адрес самой почты и имя отправителя
 
   // Получатель письма
-  $mail->addAddress('maxgraph23@gmail.com');
-  $mail->addAddress('max.denaro@yandex.ru'); // Ещё один, если нужен
+  $mail->addAddress('');
 
   // Прикрипление файлов к письму
   if (!empty($file['name'][0])) {
