@@ -1,0 +1,36 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .just-validate-error-label {
+    margin-bottom: 3px;
+    color: var(--light-color) !important;
+  }
+
+  &__input {
+    border-radius: 5px;
+    width: 100%;
+    height: 64px;
+    padding: 0 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    color: var(--dark-color);
+
+    &::placeholder {
+      color: rgba(40, 41, 68, 0.7);
+    }
+  }
+
+  &__btn {
+    padding: 18px 30px;
+  }
+}
