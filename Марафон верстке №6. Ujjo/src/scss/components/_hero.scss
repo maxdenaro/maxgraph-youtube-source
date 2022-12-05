@@ -3,13 +3,29 @@
     margin-top: -1px;
   }
 
+  &__ujjo {
+    @include tablet {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
   &__left {
     border-right: 1px solid var(--dark-color);
     width: 50%;
+
+    @include tablet {
+      border: none;
+      width: 100%;
+    }
   }
 
   &__right {
     width: 50%;
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__phrase {
@@ -52,5 +68,11 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--dark-color);
+
+    @include mobile {
+      padding: 20px;
+      font-size: 45px;
+      line-height: 50px;
+    }
   }
 }

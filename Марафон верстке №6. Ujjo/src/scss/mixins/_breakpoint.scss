@@ -7,7 +7,7 @@
 }
 
 @mixin big-desktop {
-  @media (max-width: (1440px)) {
+  @media (max-width: (1430px)) {
     @content;
   }
 }
@@ -18,14 +18,8 @@
   }
 }
 
-@mixin small-tablet {
-  @media (max-width: (768px)) {
-    @content;
-  }
-}
-
 @mixin mobile {
-  @media (max-width: (576px)) {
+  @media (max-width: (768px)) {
     @content;
   }
 }

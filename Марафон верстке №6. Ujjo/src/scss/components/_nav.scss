@@ -2,11 +2,19 @@
   &__list {
     display: flex;
     align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+    }
   }
 
   &__item {
     &:not(:last-child) {
       margin-right: 30px;
+
+      @include tablet {
+        margin: 0;
+      }
     }
   }
 
