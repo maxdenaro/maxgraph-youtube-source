@@ -1,0 +1,17 @@
+.banner {
+  margin-top: -1px;
+
+  &__image {
+    display: block;
+    margin-top: -180px;
+    width: 100%;
+
+    @include tablet {
+      margin-top: -120px;
+    }
+
+    @include mobile {
+      margin-top: -45px;
+    }
+  }
+}

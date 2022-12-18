@@ -1,0 +1,6 @@
+.logo {
+  @include mobile {
+    width: 136px;
+    height: 13px;
+  }
+}

@@ -1,0 +1,32 @@
+.footer {
+  padding: 40px 0;
+  background-color: var(--dark-color);
+
+  &__logo {
+    display: inline-block;
+    margin-bottom: 5px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: rgba(255, 255, 255, 0.7);
+
+    @include mobile {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+  }
+}

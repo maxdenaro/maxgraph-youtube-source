@@ -1,0 +1,26 @@
+.footer {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -1px;
+    padding: 20px 93px;
+    background-color: #cdfd3b;
+
+    @include mobile {
+      flex-direction: column;
+      padding: 20px;
+      gap: 20px;
+    }
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark-color);
+  }
+}

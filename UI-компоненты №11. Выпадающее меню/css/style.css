@@ -1,0 +1,99 @@
+html {
+	box-sizing: border-box;
+}
+
+*, 
+*::before, 
+*::after {
+	box-sizing: inherit;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/NotoSansRegular.woff2') format('woff2');
+	font-display: swap;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('../fonts/NotoSansSemiBold.woff2') format('woff2');
+	font-display: swap;
+	font-weight: 600;
+	font-style: normal;
+}
+
+:root {
+	--color-dark: #4d4d4d;
+	--color-light: #808080;
+	--color-accent: #5d71dd;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 100px; /* для удобства */
+	font-family: 'Noto Sans', sans-serif;
+	font-weight: 400;
+}
+
+.list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.menu {
+	display: inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.menu__item {
+	position: relative;
+}
+
+.menu__item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.menu__btn {
+	border: none;
+	padding: 5px 10px;
+	color: #fff;
+	background-color: #333;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.menu__btn--active {
+	background-color: crimson;
+}
+
+.dropdown {
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 200px;
+	background-color: #333;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.dropdown--active {
+	opacity: 1;
+	visibility: visible;
+}
+
+.dropdown__link {
+	display: block;
+	width: 100%;
+	padding: 10px 10px;
+	color: #fff;
+}

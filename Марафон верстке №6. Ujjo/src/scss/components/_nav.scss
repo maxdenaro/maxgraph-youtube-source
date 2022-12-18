@@ -1,0 +1,31 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+
+      @include tablet {
+        margin: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 15px 44px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+}

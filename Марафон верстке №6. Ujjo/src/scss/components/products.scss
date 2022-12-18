@@ -1,0 +1,137 @@
+@import "../mixins/breakpoint";
+
+.products {
+  margin-top: -1px;
+
+  &__top {
+    padding: 60px 30px;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 225px;
+      height: 156px;
+      background-image: url("../img/products-decor-1.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include mobile {
+        width: 100px;
+        height: 70px;
+      }
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 225px;
+      height: 156px;
+      background-image: url("../img/products-decor-2.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @include mobile {
+        width: 100px;
+        height: 70px;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 785px;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 73px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--dark-color);
+
+    @include tablet {
+      padding: 40px 0;
+    }
+
+    @include mobile {
+      padding: 20px;
+      font-size: 45px;
+      line-height: 50px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    margin-top: -1px;
+    padding-top: 20px;
+  }
+
+  &__decorative {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: calc(100% - 40px);
+    transform: translateX(-50%);
+
+    svg {
+      &:nth-child(2) {
+        transform: translateX(-15px);
+      }
+
+      &:nth-child(3) {
+        transform: translateX(15px);
+      }
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__item {
+    @include tablet {
+      width: calc(50% - 13px);
+    }
+
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__ticker {
+    margin-top: -1px;
+  }
+
+  &__phrase {
+    padding: 23px 0;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--dark-color);
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    padding-bottom: 20px;
+    gap: 26px;
+  }
+
+  &__cover {
+    padding: 20px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

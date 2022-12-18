@@ -5,9 +5,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const scrollAnimation = () => {
 		let windowCenter = (window.innerHeight / 2) + window.scrollY;
-		console.log(windowCenter)
+		// console.log(windowCenter)
 		scrollItems.forEach(el => {
 			let scrollOffset = el.offsetTop + (el.offsetHeight / 2);
+			console.log(scrollOffset)
 			if (windowCenter >= scrollOffset) {
 				el.classList.add('animation-class');
 			} else {

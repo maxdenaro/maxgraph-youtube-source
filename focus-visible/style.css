@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  border: none;
+  padding: 15px 30px;
+  background-color: #222;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* .btn:focus {
+  background-color: crimson;
+}
+
+@supports selector(::focus-visible) {
+  .btn:focus {
+    background-color: #222;
+  }
+
+  .btn:focus-visible {
+    background-color: crimson;
+  }
+} */
+
+.btn.focus-visible {
+  background-color: crimson;
+}
+
+.btn:hover {
+  background-color: navy;
+}
+
+.btn:active {
+  background-color: wheat;
+}

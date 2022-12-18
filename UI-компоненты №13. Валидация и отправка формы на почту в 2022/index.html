@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Валидация и отправка данных на почту</title>
+  <link rel="stylesheet" href="css/settings.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="libs/inputmask.min.js"></script>
+  <!-- <script defer src="libs/just-validate.min.js"></script> -->
+  <script defer src="libs/just-validate3.3.3.min.js"></script>
+  <!-- <script defer src="js/script.js"></script> -->
+  <script defer src="js/script-new.js"></script>
+</head>
+
+<body class="page__body">
+  <div class="container">
+    <h1 class="title title--main">Валидация и отправка данных на почту</h1>
+    <div class="divider"></div>
+    <form action="#" class="form" method="POST" enctype="multipart/form-data">
+      <label class="form__label">
+        <input class="input input-name" type="text" data-validate-field="name" name="Имя" placeholder="Введите имя">
+      </label>
+      <label class="form__label">
+        <input class="input input-mail" type="email" data-validate-field="email" name="Email"
+          placeholder="Введите email">
+      </label>
+      <label class="form__label">
+        <input class="input input-tel" type="tel" data-validate-field="tel" name="Телефон"
+          placeholder="Введите телефон">
+      </label>
+      <label class="form__label">
+        <textarea class="textarea" name="Сообщение" id="" cols="30" rows="10"
+          placeholder="Введите ваше сообщение"></textarea>
+      </label>
+      <input class="input" type="file" name="file[]" multiple id="myfile">
+      <button class="button">Отправить</button>
+    </form>
+  </div>
+</body>
+
+</html>

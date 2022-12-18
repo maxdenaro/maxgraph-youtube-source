@@ -1,0 +1,15 @@
+.header {
+  &__back {
+
+  }
+
+  &__block {
+    align-items: center;
+    justify-content: space-between;
+    padding: 22px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+}
