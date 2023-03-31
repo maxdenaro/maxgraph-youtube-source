@@ -1,0 +1,52 @@
+.where {
+  padding-top: 155px;
+  padding-bottom: 133px;
+  color: var(--light-color);
+  background-color: #001f1f;
+
+  &__content {
+    grid-column: 4 span;
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__map {
+    grid-column: 7 / 5 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 43px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 52px;
+    letter-spacing: 1.2px;
+    color: #fafafa;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 37px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fafafa;
+  }
+
+  &__btn {
+    border: none;
+    font-size: 14px;
+    background: #00665f;
+  }
+
+  @include small-tablet {
+    padding: 60px 0;
+  }
+}

@@ -1,0 +1,102 @@
+/* stylelint-disable order/order */
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding-top: 190px;
+  padding-bottom: 40px;
+  min-height: 776px;
+  color: var(--light-color);
+  background-image: url("../img/hero-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__container {
+    margin-bottom: var(--offset);
+  }
+
+  &__content {
+    grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 29px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 44px;
+    letter-spacing: 1.2px;
+
+    @include tablet {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 29px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  &__bottom-container {
+    margin-top: auto;
+    width: 100%;
+  }
+
+  &__subtitle {
+    margin: 0;
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  &__list {
+    @include small-tablet {
+      row-gap: var(--offset);
+    }
+  }
+
+  &__item {
+    grid-column: 2 span;
+  }
+
+  &__link {
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    padding-top: 17px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: inherit;
+    transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
+
+    &:active {
+      border-color: var(--active-color);
+      color: var(--active-color);
+    }
+  }
+}
+
+.hero__link.focus-visible {
+  border-color: var(--active-color);
+}

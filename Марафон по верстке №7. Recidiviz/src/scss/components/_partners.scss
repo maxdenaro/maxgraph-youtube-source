@@ -1,0 +1,86 @@
+.partners {
+  padding: 16px 0;
+
+  &__container {
+    align-items: center;
+    gap: 6px;
+
+    @include big-desktop {
+      justify-content: space-between;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  &__logo {
+    @include big-desktop {
+      max-width: 130px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include big-desktop {
+      justify-content: space-between;
+    }
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+  }
+
+  &__link {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__more {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--accent-color);
+    }
+
+    &:active {
+      color: var(--active-color);
+    }
+  }
+}
+
+.partners__more.focus-visible {
+  outline: 1px solid var(--active-color);
+  outline-offset: 3px;
+}
+
+.partners__link.focus-visible {
+  outline: 1px solid var(--active-color);
+  outline-offset: 3px;
+}

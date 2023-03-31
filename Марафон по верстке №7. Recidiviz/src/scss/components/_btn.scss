@@ -1,0 +1,35 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 80px;
+  padding: 17px 33px;
+  font-size: var(--main-size);
+  line-height: 20px;
+  letter-spacing: 0.02px;
+  text-align: center;
+  color: var(--light-color);
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  @include hover {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+  }
+
+  &:active {
+    border-color: var(--active-color);
+    background-color: var(--active-color);
+  }
+}
+
+.btn.focus-visible {
+  border-color: var(--active-color);
+}

@@ -1,0 +1,24 @@
+/* stylelint-disable alpha-value-notation */
+/* stylelint-disable color-function-notation */
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "PublicSans", sans-serif;
+  --second-family: "LibreBaskerville", sans-serif;
+  --content-width: 1152px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  --offset: 32px;
+
+  // sizes
+  --main-size: 13px;
+  --second-size: 15px;
+
+  // colors
+  --light-color: #fff;
+  --accent-color: #00a1ff;
+  --active-color: #e00e00;
+  --text-color: rgba(53, 83, 98, 0.8);
+  --dark-color: #003331;
+}
