@@ -1,0 +1,44 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+
+    &--footer {
+      display: block;
+      columns: 2;
+      max-width: 343px;
+    }
+
+    @include small-desktop {
+      gap: 24px;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    &--footer {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__link {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--dark);
+
+    &--footer {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: var(--light);
+    }
+  }
+}

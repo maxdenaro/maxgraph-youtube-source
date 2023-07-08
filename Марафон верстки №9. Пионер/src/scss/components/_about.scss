@@ -1,0 +1,38 @@
+.about {
+  &__text {
+    column-gap: var(--gap);
+    margin-bottom: var(--lg);
+    row-gap: 24px;
+
+    @include small-tablet {
+      row-gap: 16px;
+    }
+  }
+
+  &__descr {
+    grid-column: 6 span;
+    margin: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: var(--dark);
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
+  }
+
+  &__images {
+    @include small-tablet {
+      row-gap: 16px;
+    }
+  }
+
+  &__image {
+    grid-column: 6 span;
+
+    @include small-tablet {
+      grid-column: 4 span;
+    }
+  }
+}

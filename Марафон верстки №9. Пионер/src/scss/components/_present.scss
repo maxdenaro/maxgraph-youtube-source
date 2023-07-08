@@ -1,0 +1,46 @@
+.present {
+  &__map {
+    width: calc(100% - 29px);
+
+    svg {
+      display: block;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    path {
+      fill: var(--third);
+      transition: fill 0.3s;
+    }
+  }
+
+  &__text {
+    fill: var(--dark) !important;
+  }
+
+  &__link {
+    position: relative;
+
+    &::before {
+      content: "sdfsdf ";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 120%;
+      color: var(--dark);
+    }
+
+    @include hover {
+      path {
+        fill: var(--light-gray);
+      }
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+}

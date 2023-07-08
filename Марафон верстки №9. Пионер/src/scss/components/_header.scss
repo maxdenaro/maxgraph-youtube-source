@@ -1,0 +1,129 @@
+/* stylelint-disable value-keyword-case */
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray);
+    padding: 35px 0;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+
+    @include tablet {
+      position: absolute;
+      left: 0;
+      top: 0;
+      flex-direction: column;
+      align-items: flex-start;
+      overflow-y: auto;
+      padding: 28px;
+      width: 75%;
+      height: 100vh;
+      max-width: 300px;
+      box-shadow: 10px 0px 13px -5px rgba(34, 60, 80, 0.2);
+      background-color: var(--light);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-150%);
+      transition: opacity 0.3s, visibility 0.3s, transform 0.3s;
+    }
+  }
+
+  &__logo {
+    @include small-tablet {
+      width: 140px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 180px;
+
+    &--mobile {
+      display: none;
+
+      @include tablet {
+        display: flex;
+        align-items: flex-start;
+
+        &:not(:last-of-type) {
+          margin-bottom: var(--lg);
+        }
+      }
+    }
+  }
+
+  &__caption {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    text-align: right;
+    color: var(--dark);
+  }
+
+  &__link {
+    border-bottom: 1px solid currentColor;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+    color: var(--accent);
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--accent);
+
+    svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+
+    @include tablet {
+      margin-top: 28px;
+      margin-bottom: var(--gap);
+    }
+  }
+}
+
+.burger {
+  @include burger;
+
+  --burger-height: 20px;
+
+  display: none;
+  color: var(--dark);
+
+  @include tablet {
+    display: block;
+  }
+}
+
+.menu--active {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
