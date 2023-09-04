@@ -20,6 +20,12 @@
   min-height: 478px;
   background: var(--light-gray);
 
+  &__image {
+    @include mobile {
+      width: 100%;
+    }
+  }
+
   &__inner {
     display: flex;
     flex-grow: 1;

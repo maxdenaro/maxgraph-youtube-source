@@ -16,7 +16,10 @@ const swiper = new Swiper(el, {
     nextEl: ".news-btn--next",
   },
   breakpoints: {
-    1025: {
+    577: {
+      slidesPerView: 2,
+    },
+    769: {
       slidesPerView: 3,
     }
   }
