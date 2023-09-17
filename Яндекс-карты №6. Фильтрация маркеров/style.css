@@ -1,0 +1,10 @@
+#mapContainer {
+  width: 100%;
+  height: 500px;
+}
+
+.category-button {
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
