@@ -1,0 +1,145 @@
+@media (max-width: 1024px) {
+  .hero {
+    background-position: left -200px bottom;
+    background-size: cover;
+  }
+
+  .hero__hello span {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--bg);
+    transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+
+  .form__btn {
+    height: 40px;
+  }
+
+  .nav--active {
+    transform: none;
+    visibility: visible;
+  }
+
+  .nav__list {
+    height: 100%;
+    padding: 50px 0;
+    flex-direction: column;
+  }
+
+  .burger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+  }
+
+  .burger__line {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--main);
+    transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+  }
+
+  .burger__line:first-child {
+    top: 0;
+  }
+
+  .burger__line:last-child {
+    top: calc(100% - 2px);
+  }
+
+  .burger__line:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .burger--active .burger__line:nth-child(2) {
+    transform: scale(0);
+  }
+
+  .burger--active .burger__line:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+
+  .burger--active .burger__line:last-child {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .hero {
+    background-position: left 20% bottom;
+    background-position: left 70% top 50px;
+    background-size: auto 300px;
+  }
+
+  .hero__level {
+    display: none;
+  }
+
+  .hero__left {
+    align-items: center;
+  }
+
+  .hero__text {
+    max-width: 100%;
+  }
+
+  .hero__content {
+    padding: 0;
+    padding-top: 250px;
+    padding-bottom: 40px;
+    align-items: center;
+  }
+
+  .hero__hello {
+    text-align: center;
+  }
+
+  .hero__hello span {
+    display: block;
+  }
+
+  .hero__descr {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    background-position: left top 50px;
+    background-size: auto 300px;
+  }
+
+  .header__container {
+    justify-content: initial;
+  }
+
+  .header__btn {
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
+  .btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
