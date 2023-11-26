@@ -69,6 +69,7 @@ class Quiz {
 			}
 
 			if (e.target == document.querySelector('[data-send]')) {
+				this.addToSend();
 				this.send();
 			}
 		});
