@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 100px;
+  background-color: wheat;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.swiper {
+  margin: -300px !important;
+  padding: 300px !important;
+}
+
+.swiper-slide * {
+  box-sizing: border-box;
+}
+
+.card {
+  min-height: 450px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px 8px #0000000f;
+}
+
+.swiper-slide {
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.swiper-slide-visible {
+  opacity: 1;
+}
