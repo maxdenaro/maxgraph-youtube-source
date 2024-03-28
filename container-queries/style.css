@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  min-width: 360px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  gap: 30px;
+  max-width: 1030px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.content-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.content-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 230px;
+  flex-shrink: 0;
+}
+
+.content-wrapper {
+  width: calc(100% - 60px - 460px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.content-author {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.news__image {
+  max-height: 150px;
+}
+
+.news__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px 0;
+  flex-grow: 1;
+}
+
+.news__category {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #888;
+}
+
+.news__time {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.news__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-size: clamp(16px, 5cqw, 20px);
+  color: #333;
+}
+
+.news__link {
+  color: inherit;
+}
+
+.news__descr {
+  margin: 0;
+  font-size: 16px;
+  font-size: clamp(14px, 5cqw, 16px);
+}
+
+/* .content-sidebar .news__image {
+  display: none;
+}
+
+.content-sidebar .news__content {
+  padding: 0;
+} */
+
+.content-sidebar,
+.content-wrapper {
+  container-type: inline-size;
+  container-name: news;
+}
+
+.content-aside {
+  container-type: inline-size;
+  container-name: aside;
+}
+
+@container news (max-width: 460px) {
+  .news {
+    display: block;
+  }
+
+  .news__image {
+    display: none;
+  }
+
+  .news__content {
+    padding: 0;
+  }
+}
+
+@container aside (min-width: 461px) {
+  .content-author {
+    flex-direction: row;
+  }
+
+  .content-author__avatar {
+    max-width: 200px;
+  }
+
+  .content-author__info {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .content-wrapper {
+    width: calc(100% - 30px - 230px);
+  }
+
+  .content-aside {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .content-sidebar {
+    width: 100%;
+  }
+
+  .content-wrapper {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../fonts/SatoshiRegular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("../fonts/ClashDisplayRegular.woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Clash Display";
+  src: url("../fonts/ClashDisplayMedium.woff2");
+  font-weight: 500;
+  font-display: swap;
+}

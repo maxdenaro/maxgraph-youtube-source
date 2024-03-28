@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Queries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="content">
+    <div class="content-sidebar">
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Бизнес</a>
+          <time class="news__time" datetime="2024-03-25 10:00:00">10:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">"Сбербанк" купил "Яндекс"</a></h3>
+          <p class="news__descr">
+            Крупнейшая сделка в истории России
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Спорт</a>
+          <time class="news__time" datetime="2024-03-25 11:00:00">11:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">"Зенит" выиграл чемпионат России по футболу</a></h3>
+          <p class="news__descr">
+            Победа в последнем туре
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Наука</a>
+          <time class="news__time" datetime="2024-03-25 12:00:00">12:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">Ученые обнаружили новую планету</a></h3>
+          <p class="news__descr">
+            Планета размером с Землю
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Культура</a>
+          <time class="news__time" datetime="2024-03-25 13:00:00">13:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">В Москве прошел фестиваль еды</a></h3>
+          <p class="news__descr">
+            Более 100 участников и 50 тысяч посетителей
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Экономика</a>
+          <time class="news__time" datetime="2024-03-25 14:00:00">14:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">В России введен новый налог</a></h3>
+          <p class="news__descr">
+            Налог на интернет-покупки
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+    </div>
+    <div class="content-wrapper">
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Бизнес</a>
+          <time class="news__time" datetime="2024-03-25 10:00:00">10:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">"Сбербанк" купил "Яндекс"</a></h3>
+          <p class="news__descr">
+            Крупнейшая сделка в истории России
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Спорт</a>
+          <time class="news__time" datetime="2024-03-25 11:00:00">11:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">"Зенит" выиграл чемпионат России по футболу</a></h3>
+          <p class="news__descr">
+            Победа в последнем туре
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Наука</a>
+          <time class="news__time" datetime="2024-03-25 12:00:00">12:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">Ученые обнаружили новую планету</a></h3>
+          <p class="news__descr">
+            Планета размером с Землю
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Культура</a>
+          <time class="news__time" datetime="2024-03-25 13:00:00">13:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">В Москве прошел фестиваль еды</a></h3>
+          <p class="news__descr">
+            Более 100 участников и 50 тысяч посетителей
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+      <article class="news">
+        <div class="news__content">
+          <a href="#" class="news__category">Экономика</a>
+          <time class="news__time" datetime="2024-03-25 14:00:00">14:00</time>
+          <h3 class="news__title"><a href="#" class="news__link">В России введен новый налог</a></h3>
+          <p class="news__descr">
+            Налог на интернет-покупки
+          </p>
+        </div>
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/b4/f6/b6/b4f6b6411c124cac94a66e4ffbb7911d_fuse_52065955_0.jpg"
+          alt="" class="news__image">
+      </article>
+    </div>
+    <div class="content-aside">
+      <div class="content-author">
+        <img
+          src="https://developers.sber.ru/gigachat/generated-images/57/27/7f/57277fa818e045b0b0e4a6af75b46f72_fuse_52064535_0.jpg"
+          alt="Виталий Абрамов" class="content-author__avatar">
+        <div class="content-author__info">
+          <div class="content-author__name">Виталий Абрамов</div>
+          <div class="content-author__post">Автор блога</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

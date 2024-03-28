@@ -1,0 +1,16 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+  transition: var(--main-trs);
+}
+
+.btn--theme-dark {
+  color: var(--white);
+  background: rgba(249, 249, 249, 0.15);
+}
